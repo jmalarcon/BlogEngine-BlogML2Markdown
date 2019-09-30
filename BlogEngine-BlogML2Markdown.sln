@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogMLToMarkdown", "BlogMLToMarkdown.csproj", "{E7AA5421-2239-426A-9823-26145F3CF7B2}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogEngine-BlogML2Markdown", "BlogEngine-BlogML2Markdown.csproj", "{E7AA5421-2239-426A-9823-26145F3CF7B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B25FE2A-F6C9-462A-903A-50B108600E5A}
 	EndGlobalSection
 EndGlobal

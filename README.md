@@ -1,5 +1,7 @@
 # BlogEngine-BlogML2Markdown
 
+![Logo](imgs/BlogEngine-BlogML2Markdown.png)
+
 C# command-line tool that converts a BlogML `.xml` file from BlogEngine to markdown files for [MIIS](https://github.com/jmalarcon/miis), Jekyll, Hugo, etc...
 
 It uses [pandoc](https://pandoc.org) for transforming HTML into Markdown. It's not 100% perfect but you will get pretty good markdown files with very few issues. **This tool does not export comments** (yet).
