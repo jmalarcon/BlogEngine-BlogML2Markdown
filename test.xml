@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<blog root-url="/" date-created="2019-09-29T09:19:45" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.blogml.com/2006/09/BlogML">
+  <title type="text"><![CDATA[José Manuel Alarcón]]></title>
+  <sub-title type="text"><![CDATA[geek, author, speaker, entrepreneur, web guy]]></sub-title>
+  <authors>
+    <author id="Admin" date-created="2019-09-20T13:39:25" date-modified="2019-09-20T13:39:25" approved="true" email="jmalarcon@jmalarcon.es">
+      <title type="text"><![CDATA[Admin]]></title>
+    </author>
+  </authors>
+  <extended-properties>
+    <property name="CommentModeration" value="Anonymous" />
+    <property name="SendTrackback" value="Yes" />
+  </extended-properties>
+  <categories>
+    <category id="4eb4803a-dfa4-4ef9-82e5-3efeddc307a2" date-created="0001-01-01T00:00:00" date-modified="0001-01-01T00:00:00" approved="true" parentref="">
+      <title type="text"><![CDATA[Ciencia]]></title>
+    </category>
+    <category id="415b852e-2c89-48e7-ae72-6490947bae7b" date-created="0001-01-01T00:00:00" date-modified="0001-01-01T00:00:00" approved="true" parentref="">
+      <title type="text"><![CDATA[Emprender]]></title>
+    </category>
+    <category id="8b02964b-5da2-4d18-8d87-3c7e50108fc3" date-created="0001-01-01T00:00:00" date-modified="0001-01-01T00:00:00" approved="true" parentref="">
+      <title type="text"><![CDATA[Empresa]]></title>
+    </category>
+    <category id="dfe08726-a3b5-46d4-8a91-85bab7e204ad" date-created="0001-01-01T00:00:00" date-modified="0001-01-01T00:00:00" approved="true" parentref="">
+      <title type="text"><![CDATA[Fenómeno Free]]></title>
+    </category>
+    <category id="93bedb44-1e2b-4cfd-a428-119824d8a37e" date-created="0001-01-01T00:00:00" date-modified="0001-01-01T00:00:00" approved="true" parentref="">
+      <title type="text"><![CDATA[Formación]]></title>
+    </category>
+    <category id="35bc24b0-9d34-4eb1-9cef-9f998553d532" date-created="0001-01-01T00:00:00" date-modified="0001-01-01T00:00:00" approved="true" parentref="">
+      <title type="text"><![CDATA[Innovación]]></title>
+    </category>
+    <category id="c8228ebd-850d-42f6-b894-5ca5e7f0ad69" date-created="0001-01-01T00:00:00" date-modified="0001-01-01T00:00:00" approved="true" parentref="">
+      <title type="text"><![CDATA[Internet]]></title>
+    </category>
+    <category id="15132cab-19a9-42fe-a523-42d1f80e6f30" date-created="0001-01-01T00:00:00" date-modified="0001-01-01T00:00:00" approved="true" parentref="">
+      <title type="text"><![CDATA[Modelos de negocio]]></title>
+    </category>
+    <category id="373077fb-b6ec-4cfd-a410-360aa23ce241" date-created="0001-01-01T00:00:00" date-modified="0001-01-01T00:00:00" approved="true" parentref="">
+      <title type="text"><![CDATA[Psicología]]></title>
+    </category>
+    <category id="4eba8b86-5f80-4df8-903a-462fcd0e9e8b" date-created="0001-01-01T00:00:00" date-modified="0001-01-01T00:00:00" approved="true" parentref="">
+      <title type="text"><![CDATA[Sociedad]]></title>
+    </category>
+    <category id="3918ea49-6c13-4353-a4a5-41c502fbeb33" date-created="0001-01-01T00:00:00" date-modified="0001-01-01T00:00:00" approved="true" parentref="">
+      <title type="text"><![CDATA[Tecnología y Gadgets]]></title>
+    </category>
+    <category id="e892c9ac-65e0-4f18-895e-41992b37ea57" date-created="0001-01-01T00:00:00" date-modified="0001-01-01T00:00:00" approved="true" parentref="">
+      <title type="text"><![CDATA[Tendencias]]></title>
+    </category>
+  </categories>
+  <posts>
+  <post id="0963f6b2-980c-4e0c-bd59-60e15ac8ce3f" date-created="2017-08-04T22:42:00" date-modified="2017-09-02T16:29:59" approved="true" post-url="/post/tweetstorm-la-inteligencia-artificial-superara-a-la-de-los-humanos-que-implicara.aspx" type="normal" hasexcerpt="true" views="0" is-published="True">
+      <title type="text"><![CDATA[Tweetstorm: ¿La inteligencia artificial superará a la de los humanos? ¿Qué implicará?]]></title>
+      <content type="text"><![CDATA[<p>Un <strong>Tweetstorm</strong> es una serie de Tweets encadenados que un usuario lanza en Twitter para expresar algunas ideas complejas en m&aacute;s que los exiguos 140 caracteres que permite la aplicaci&oacute;n de <em>micro-blogging</em>. Obviamente el nombre viene de combinar las palabras "Tweet" y "Storm" (tormenta), o sea, que es una "Tormenta de Tweets". Aunque una de las principales virtudes de Twitter, en mi opini&oacute;n, es precisamente su brevedad, lo de los Tweetstorms se ha puesto de moda como una forma de transmitir algunas ideas de manera breve en forma de hilo, y los hay muy interesantes la verdad.</p>
+<p>El caso es que el otro d&iacute;a se me hincharon las narices de leer algunas tonter&iacute;as en la prensa acerca de la inteligencia artificial y c&oacute;mo en alg&uacute;n momento cercano nos va a superar y puede tener conciencia de si misma, etc... e hice <a href="https://twitter.com/jm_alarcon/status/891255529582059520" target="_blank">un Tweetstorm</a> al respecto que interes&oacute; a mucha gente y que era casi un art&iacute;culo, aunque en plan telegrama:</p>
+<blockquote class="twitter-tweet  tw-align-center" data-lang="en">
+<p dir="ltr" lang="es">Unas cuantas ideas para tratar de aclarar algunos mitos sobre la <a href="https://twitter.com/hashtag/AI?src=hash" target="_blank">#AI</a> y si "alg&uacute;n d&iacute;a las m&aacute;quinas ser&aacute;n m&aacute;s inteligentes que las personas". <a href="https://t.co/Bmv2XhT2Er" target="_blank">pic.twitter.com/Bmv2XhT2Er</a></p>
+&mdash; JM Alarc&oacute;n Agu&iacute;n 🌐 (@jm_alarcon) <a href="https://twitter.com/jm_alarcon/status/891255529582059520" target="_blank">July 29, 2017</a></blockquote>
+<p>A continuaci&oacute;n dejo el texto completo, en formato m&aacute;s legible:</p>
+<hr />
+<p>Unas cuantas ideas para tratar de aclarar algunos mitos sobre la #AI y si "alg&uacute;n d&iacute;a las m&aacute;quinas ser&aacute;n m&aacute;s inteligentes que las personas".</p>
+<p>Para empezar, lo de "m&aacute;s inteligente" es en s&iacute; una expresi&oacute;n falaz y sin mucho sentido, ya que la "inteligencia" abarca muchas cosas. <strong>Se suele pensar en la inteligencia como algo lineal, que va de una ameba a un ser humano</strong>, uno en cada extremo:</p>
+<p style="text-align: center;"><img src="/image.axd?picture=/AI/Intelegenciometro.gif" alt="Animaci&oacute;n con una escala de inteligencia" width="508" height="304" /></p>
+<p style="text-align: center; font-size: x-small;">(Menudo trabajo me ha dado el gr&aacute;fico anterior, pero todo sea por expresar gr&aacute;ficamente la idea)</p>
+<p>Pero no es as&iacute;.</p>
+<p><strong>La inteligencia abarca multitud de habilidades</strong>: razonamiento abstracto, simb&oacute;lico, deducci&oacute;n, predicci&oacute;n, memoria, intuici&oacute;n, l&oacute;gica emocional, razonamiento espacial, procesado de datos sensoriales. Y tambi&eacute;n entra en juego la velocidad de razonar.</p>
+<p>Adem&aacute;s, no conocemos su l&iacute;mite, pero <strong>la inteligencia no es infinita ni lineal</strong>, que es lo que la idea de la escala nos lleva a pensar. Por ejemplo, &iquest;qu&eacute; es m&aacute;s complejo, una mosca o una nave espacial? &Eacute;sta hace m&aacute;s cosas que aquella, pero no es m&aacute;s compleja en modo alguno, y al rev&eacute;s. Lo mismo ocurre con la inteligencia...</p>
+<p>En cuanto a <strong>"inteligencias parciales"</strong>, muchos <strong>animales</strong> son m&aacute;s inteligentes que nosotros. Por ejemplo, <a href="https://www.sciencedaily.com/releases/2007/12/071203094823.htm" target="_blank">los chimpanc&eacute;s tiene mejor memoria visual que nosotros</a>, y <a href="https://www.sciencedaily.com/releases/2006/10/061012094818.htm" target="_blank">los cascanueces americanos pueden recordar la posici&oacute;n exacta de m&aacute;s de 30.000 nueces</a>.</p>
+<p>Y en cuanto a <strong>capacidades supuestamente solo humanas</strong>, solo por citar algunos ejemplos flipantes, <a href="http://www.pnas.org/content/104/14/6066.abstract" target="_blank">los ratones pueden crear generalizaciones y pensamiento abstracto</a>, los <a href="https://link.springer.com/article/10.1007%2Fs10071-008-0157-0" target="_blank">chimpac&eacute;s y orangutanes pueden planificar el futuro</a>, y <a href="http://www.pnas.org/content/103/45/17053.abstract" target="_blank">los elefantes tienen conciencia de s&iacute; mismos</a>. S&iacute;, <strong>como Skynet</strong>.</p>
+<p>Existen muchos m&aacute;s <a href="https://www.vox.com/2014/11/16/7217631/animal-intelligence-smartest" target="_blank">ejemplos de inteligencia parcial animal</a>.</p>
+<p>Y <strong>hablando de AI</strong>, pues tres cuartos de lo mismo. Hace d&eacute;cadas que <strong>cualquier calculadora u ordenador es mejor que t&uacute; en matem&aacute;ticas</strong>. DeepMind y Watson <strong>diagnostican enfermedades</strong> mejor que un m&eacute;dico: <a href="http://www.androidauthority.com/deepmind-uk-731501/" target="_blank">Ejemplo 1</a>, <a href="https://www.engadget.com/2016/07/05/google-deepmind-will-detect-eye-diseases-with-ai/" target="_blank">Ejemplo 2</a>, <a href="http://www.npr.org/sections/money/2015/05/20/407978049/how-a-machine-learned-to-spot-depression" target="_blank">Ejemplo 3</a> o <strong>ahorran cientos de millones</strong> en electricidad a sus due&ntilde;os, Google <a href="http://www.seattletimes.com/business/google-cuts-its-giant-electricity-bill-with-deepmind-powered-artificial-intelligence/" target="_blank">en el caso de Deepmind</a>.</p>
+<p>Por cierto, la memoria y la velocidad de Google es mucho mejor que la de cualquier humano o animal.</p>
+<p>Y si nos referimos a <strong>habilidades supuestamente solo humanas</strong>, existen <strong>AIs con "inteligencia emocional"</strong> <a href="https://www.technologyreview.com/s/603529/socially-sensitive-ai-software-coaches-call-center-workers/" target="_blank">entrenando a personal de Call Centers en tiempo real</a> y <strong>AIs especializadas en derecho</strong> que <a href="http://www.rossintelligence.com/" target="_blank">asesoran a abogados</a> o <a href="https://www.theverge.com/2017/7/12/15960080/chatbot-ai-legal-donotpay-us-uk" target="_blank">anulan multas</a>.</p>
+<p><strong>El periodismo</strong> est&aacute; siendo colonizado por AI desde hace ya tiempo. P.Ej. en Associated Press much&iacute;simos reportajes de deportes y finanzas los hace una AI con un desempe&ntilde;o similar al de un redactor experimentado. Para 2030 el 90% de las noticias las escribir&aacute;n m&aacute;quinas.</p>
+<p><strong>En medicina</strong>, el robot STAR es capaz de <a href="http://spectrum.ieee.org/the-human-os/robotics/medical-robots/autonomous-robot-surgeon-bests-human-surgeons-in-world-first" target="_blank">suturar tejido blando mejor que la mayor&iacute;a de los cirujanos</a> y Sedasys, el robot anestesista, <a href="https://www.washingtonpost.com/news/the-switch/wp/2016/03/28/its-game-over-for-the-robot-intended-to-replace-anesthesiologists/" target="_blank">se retir&oacute; debido a las protestas y la presi&oacute;n de los anestesistas</a></p>
+<p>Incluso algunas AI son ya capaces de <a href="https://www.newscientist.com/article/mg23231020-100-ai-learns-to-predict-the-future-by-watching-2-million-videos/" target="_blank">"predecir el futuro"</a> o <a href="https://github.com/facebookresearch/end-to-end-negotiator" target="_blank">inventarse lenguajes para negociar y comunicarse entre ellas</a>. Aqu&iacute; dejo tambi&eacute;n <a href="https://www.theatlantic.com/technology/archive/2017/06/artificial-intelligence-develops-its-own-non-human-language/530436/" target="_blank">la versi&oacute;n menos sensacionalista que he encontrado</a> y una excelente explicaci&oacute;n de <a href="https://twitter.com/xamat" target="_blank">@xamat</a> sobre el <a href="https://www.quora.com/Is-it-true-that-Facebook-has-shutdown-one-of-its-AI-research-programs-after-the-AI-created-its-own-language/answer/Xavier-Amatriain" target="_blank">motivo del cierre de la AI</a>.</p>
+<p>&iquest;Quiere decir que <strong>esas AI son m&aacute;s inteligentes que los humanos</strong>? Ni de lejos.</p>
+<p>La <strong>cuesti&oacute;n principal</strong> es que la inteligencia tiene muchas dimensiones. La nuestra est&aacute; optimizada para unas cosas y es muy mala en otras. <strong>Una AI general</strong>, que es de lo que se habla al referirse a que nos van a superar, <strong>no puede estar optimizada en todas las dimensiones</strong>, y <strong>tampoco puede ser como la nuestra</strong> por la sencilla raz&oacute;n de que la nuestra depende de nuestros sentidos y nuestro entorno (Ortega dixit).</p>
+<p>Si se llega a crear una AI general alguna vez (que lo dudo), <strong>ser&aacute; mejor en muchas cosas y necesariamente peor en otras, y ser&aacute; adem&aacute;s diferente</strong>.</p>
+<p>Adem&aacute;s <strong>el mundo es imperfecto y sobre todo lleno de contradicciones</strong>. Cualquier AI general deber&iacute;a lidiar con eso, cosa que dudo.</p>
+<p>El futuro est&aacute; lleno de AIs que nos superar&aacute;n en cosas concretas. <strong>Nos complementar&aacute;n</strong>. Incluso se inventar&aacute;n nuevos tipos de "inteligencia".</p>
+<p>Esto va a ser genial. Nos "empoderar&aacute;" a todos los niveles, al igual que en la revoluci&oacute;n industrial las m&aacute;quinas hicieron lo propio.</p>
+<p>Pero no se dar&aacute; el caso de una AI general que "tome conciencia de si misma" (valiente chorrada), nos supere y nos quiera eliminar.</p>
+<p><strong>Su mayor problema, adem&aacute;s, ser&aacute; explicar sus razonamientos</strong>, algo que un humano no puede hacer pero que <a href="https://www.technologyreview.com/s/604087/the-dark-secret-at-the-heart-of-ai/" target="_blank">les exigiremos</a>, y por lo que una AI se ver&aacute; coartada siempre.</p>
+<p><strong>Yo miro al futuro con gran esperanza, curiosidad e ilusi&oacute;n</strong> a pesar de baches puntuales. Eso, si no se lo cargan los "inteligentes" humanos.</p>
+<hr />
+<p>&iexcl;Espero que te resulte interesante!</p>]]></content>
+      <post-name type="text"><![CDATA[Tweetstorm: ¿La inteligencia artificial superará a la de los humanos? ¿Qué implicará?]]></post-name>
+      <excerpt type="text"><![CDATA[Un Tweetstorm, pasado a artículo, sobre por qué no tiene sentido hablar de inteligencia artificial que superará a la de los humanos, y muchos otros conceptos relacionados.]]></excerpt>
+      <authors>
+        <author ref="Admin" />
+      </authors>
+      <categories>
+        <category ref="4eb4803a-dfa4-4ef9-82e5-3efeddc307a2" />
+      </categories>
+      <tags>
+        <tag ref="Tweetstorm" />
+        <tag ref="Inteligencia Artificial" />
+      </tags>
+      <comments>
+        <comment id="c9f45f82-f92d-41e8-b5ff-eeba1860ba3b" parentid="00000000-0000-0000-0000-000000000000" date-created="2017-09-02T00:51:18" date-modified="2017-09-02T00:51:18" approved="true" user-name="Jose" user-email="josercjd@gmail.com" user-ip="90.94.39.137" user-url="">
+          <title type="text"><![CDATA[re: Tweetstorm: ¿La inteligencia artificial superará a la de los humanos? ¿Qué implicará?]]></title>
+          <content type="text"><![CDATA[Hola. Desde que tuve la suerte de dar contigo por los cursos de JavaScript, vengo siguiendo tu blog y he de decir que está muy interesante. Me ha gustado mucho sobre todo este artículo, el anterior y el de &quot;Electrónica chapucera y el futuro de la inteligencia artificial&quot;. También he leído tu libro &quot;Tres Monos, Diez Minutos&quot;: Creo que tiene tanta sabiduría que es de esos que has de leer varias veces y que siempre aporta algo en distintos momentos de la vida.
+
+Lo cierto es que todo este asunto de la inteligencia me tiene obsesionado, en particular la humana y la posibilidad de medirla y cuantificarla. ¿Qué opinas sobre eso?. Hay muchísima controversia en torno al Cociente Intelectual. Mucha gente no lo apoya en el sentido de que un test no puede medir la inteligencia humana en su totalidad, en tanto en cuanto no está bien definida ni por tanto tampoco lo están conceptos como la mal llamada en España &quot;Superdotación Intelectual&quot; y las Altas Capacidades en general.
+
+Yo opino que algo de objetividad sí tienen en la medida en que evalúan un amplio repertorio de habilidades cognitivas bien estudiadas y posteriormente se utilizan métodos estadísticos fiables para colocarte con precisión en la escala en función de tus resultados. Creo que las personas que están en contra de eso es porque lo enfocan al revés: creen que el resultado determina tu capacidad, no ven que es tu habilidad la que determina tu resultado. Por supuesto puedes tener un mal día, pero si haces varios en distintos momentos de tu vida con resultados similares... seguramente esa circunstancia ya no sea una condición importante y el motivo sea otro. Tal vez quieras dedicar otro artículo a ese asunto jeje.
+
+Yo no estoy seguro tampoco de que se vaya a crear una &quot;AI general&quot;, pero tampoco lo puedo descartar. El cerebro es harto complejo, pero no infinitamente complejo. Creo que cuando se conozca al 100% se podría replicar. En cualquier caso, todo este asunto de la AI y la inteligencia humana me parece muy interesante porque son campos que sin duda se complementan el uno al otro y los avances en un sentido repercuten también en el otro.
+
+Gracias por tu tiempo invertido en leer un comentario tan largo ;).
+
+Un saludo José Manuel.]]></content>
+        </comment>
+        <comment id="9e958c1f-bb5d-4e79-99e5-22f1ac047b23" parentid="c9f45f82-f92d-41e8-b5ff-eeba1860ba3b" date-created="2017-09-02T16:29:59" date-modified="2017-09-02T16:29:59" approved="true" user-name="Jose M. Alarcon" user-email="jmalarcon@jmalarcon.es" user-ip="83.165.163.95" user-url="">
+          <title type="text"><![CDATA[re: Tweetstorm: ¿La inteligencia artificial superará a la de los humanos? ¿Qué implicará?]]></title>
+          <content type="text"><![CDATA[Hola Jose:
+
+Muchas gracias por los cumplidos. Me alegro de que te parezca interesante lo que escribo. Aunque ahora lo tengo un poco &quot;aparcado&quot; por falta de tiempo y ganas, este tipo de comentarios siempre animan a uno a continuar.
+
+El conocimiento de la inteligencia y el cerebro es algo muy complejo y que abarca muchas cosas. Lo de medir la inteligencia con un número es un arma de doble filo. Supongo que es válido para cuantificar cierto tipo de inteligencia muy concreto, para ciertos tipos de razonamiento. Pero, como digo precisamente en este post, hay muchos otros tipos de inteligencia, o al menos muchas maneras de aplicarla. Yo me considero inteligente para algunas cosas, pero soy un completo zoquete para otras. Incluso dentro de algunas de las cosas en las que se podría decir que soy inteligente, tengo que luchar para poder avanzar con cuestiones concretas. Creo que la inteligencia &quot;pura&quot; (si existe tal cosa, pero para entendernos) por si sola no sirve de mucho, ya que todo ser inteligente debe serlo dentro de un entorno concreto, de una sociedad... y esto hace que la inteligencia deba acompañarse de muchas otras cosas, y que haya otras &quot;inteligencias&quot;, como algunas que cito en animales, por ejemplo.
+
+Es indudable que existen personas con &quot;altas capacidades&quot; que, cuando se detectan en edad temprana, sería bueno otorgarles una atención y orientación especiales, para tratar de potenciarlas y de ayudar a esa persona a integrarse mejor en la sociedad, pues en muchos casos me da la sensación de que eso es también necesario. Pero medir eso simplemente con un número me parece limitarlo. Como digo, creo que hay niños (y adultos) muy inteligentes que darían mal resultado en un test de inteligencia convencional, pero que son extremadamente inteligentes en otras áreas que no miden esos tests: las artes, la economía, la relación con otras personas... O sea, que creo que son un buen intento de buscar una forma de medir la inteligencia, pero el rango de lo que miden es demasiado estrecho.
+
+Para terminar, y por no extenderme más, respecto a lo de la AI general: o replicamos un cerebro de tipo orgánico porque se &quot;cultiva&quot; de algún modo o no creo que la tecnología del silicio que conocemos pueda llegar a replicar nada igual. En ese sentido creo que los avances más importantes a largo plazo quizá vengan del mundo de la biotecnología (quizá combinada con el silicio) que de la electrónica y la informática. Ahora bien, incluso aunque se lograse replicar un cerebro, la inteligencia o el &quot;ser&quot; es algo que es mucho más complejo y que viene determinado por otras muchas cosas: los sentidos y tu entorno, tus experiencias y conocimientos... Hay estudios que indican que incluso el lenguaje que utilices moldea tu cerebro y tu forma de pensar (hay una reflexión muy buena sobre ello en la peli del año pasado &quot;La llegada&quot;, recomendable). Además, siguiendo la mejor tradición de la teoría del caos, cualquier ínfima variación en un sistema tan complejo como del que estamos hablando provocaría otro resultado completamente diferente, por lo que de poco valdría tener algo así pues no podrías controlarlo o predeterminarlo (como robots súper-inteligentes con un cerebro idéntico pre-programado, como se ve en las películas).
+
+Este tema da para hablar (y escribir) durante horas, porque tiene implicaciones a todos los niveles, incluso filosóficos. Pero es de lo más interesante, desde luego.
+
+Gracias también por leer todo este rollo :-)
+
+Saludos!]]></content>
+        </comment>
+        <comment id="6383bf13-e731-4499-aa30-0436cd28c24b" parentid="9e958c1f-bb5d-4e79-99e5-22f1ac047b23" date-created="2017-09-02T17:10:26" date-modified="2017-09-02T17:10:26" approved="true" user-name="Jose" user-email="josercjd@gmail.com" user-ip="90.94.39.137" user-url="">
+          <title type="text"><![CDATA[re: Tweetstorm: ¿La inteligencia artificial superará a la de los humanos? ¿Qué implicará?]]></title>
+          <content type="text"><![CDATA[Gracias a ti por leer y contestar. Es interesante lo que dices y es verdad que da para hablar o escribir durante horas, así que de rollo nada, a mi me encanta :). He visto La llegada, está curiosa. Me alegro de que mi comentario te anime a continuar porque en parte es lo que pretendía. Realmente me gusta lo que escribes así que creo que todos salimos ganando al final.
+
+Saludos!]]></content>
+        </comment>
+        <comment id="c189ddb7-eca7-4026-a299-6d25a9bde53a" parentid="00000000-0000-0000-0000-000000000000" date-created="2019-01-16T14:40:30" date-modified="2019-01-16T14:40:30" approved="true" user-name="Universo Cuántico" user-email="cuanticou@gmail.com" user-ip="83.57.122.245" user-url="">
+          <title type="text"><![CDATA[re: Tweetstorm: ¿La inteligencia artificial superará a la de los humanos? ¿Qué implicará?]]></title>
+          <content type="text"><![CDATA[Buenos días. 
+En primer lugar, no sé si tiene lógica escribir un comentario un año y varios meses después de esta publicación, pero en los últimos tres años casi no podía leer, y mucho menos escribir.
+Pido disculpas.
+Sin embargo, este tema me interesa tanto que no soy capaz de retener las ganas de dar mi humilde opinión al respecto.
+Estoy convencido de que en el futuro, dentro de quizá 1.000 años, de ese orden, los humanos nos habremos dado cuenta de que somos muy imperfectos. La biología, que hoy nos parece increíblemente compleja y perfecta, no lo es para nada. Es solo mi humilde opinión.
+Problemas tremendos de la vida biológica: necesidad de muchos componentes como oxígeno, agua, alimentos, temperatura muy limitada, dormir, y otros problemas emocionales, envejecimiento y muerte, etc.
+Todo ello se puede mejorar mediante tecnologías que hoy ya empiezan a estar a nuestro alcance. Los simples chips, la electrónica, la informática ya permiten realizar cierto tipo de &quot;razonamientos&quot; y acceder a una monstruosa &quot;memoria&quot; contra la que los seres biológicos no tenemos nada, y digo &quot;nada&quot; que hacer.
+Opino humildemente que la evolución del ser humano continúa imparable, y que el siguiente paso va a ser nuestra conversión en máquinas, quizá tipo &quot;robot&quot;, que más adelante aún se convertirá en algo mucho más intangible, quizá como una nube de &quot;gas&quot; inteligente, y quizá algún día en poco más que energía pura que pueda &quot;pensar&quot;. 
+A lo mejor tenían razón nuestros antepasados creyendo en el &quot;alma&quot;,... porque sería algo similar.
+Sus ventajas serían clarísimas, ya que esos seres podrían viajar por el universo, a velocidades cercanas a la de la luz, sin necesitar nada más que energía pura, colonizando el universo y alcanzando unos niveles de conocimiento y sabiduría que hoy escaparían de nuestro entendimiento.
+Y no creáis que soy un loco de estos que creen en los extraterrestres ni en los fenómenos extraños,... todo lo contrario, siempre he sido súper realista y he odiado a la gente que cree en esas cosas raras. Por eso precisamente estudié ingeniería.
+Por último, quiero enviarle un cariñoso saludo a mi ex-alumno José Alarcón. He tenido miles y miles de alumnos a lo largo de decenas de años, y solo unos pocos, quizá diez o doce de ellos han llamado mi atención y mi respeto, pues  eran infinitamente mejores y más inteligentes que yo. Y José Alarcón es sin duda uno de ellos. Me alegro mucho de haberte conocido y haber podido disfrutar de tu compañía. 
+Además, tengo una deuda eterna contigo que probablemente no pueda pagar,  y que corroe mi mente desde hace muchos años.
+Me siento muy orgulloso de tí !!!!
+Enhorabuena por tu imparable éxito !!!!
+
+]]></content>
+        </comment>
+        <comment id="9a54b937-a96c-4570-b43d-45da72c6fc24" parentid="c189ddb7-eca7-4026-a299-6d25a9bde53a" date-created="2019-01-16T16:44:46" date-modified="2019-01-16T16:44:46" approved="true" user-name="Jose M. Alarcon" user-email="jmalarcon@jmalarcon.es" user-ip="46.26.18.133" user-url="">
+          <title type="text"><![CDATA[re: Tweetstorm: ¿La inteligencia artificial superará a la de los humanos? ¿Qué implicará?]]></title>
+          <content type="text"><![CDATA[Hola!
+
+Muchas gracias por dar tu opinión, y sobre todo muchas gracias por los cumplidos. Me he sonrojado al leerlos y más viniendo de alguien tan sobresaliente como tú :-)
+
+¡Cuídate!]]></content>
+        </comment>
+      </comments>
+      <trackbacks />
+    </post>
+  <post id="6dc208c4-f689-4040-89e2-b1fa7b4e347b" date-created="2017-11-27T00:21:00" date-modified="2018-06-22T14:10:49" approved="true" post-url="/post/tecnologia-big-data-la-democracia-intervenida-y-que-podemos-hacer-al-respecto.aspx" type="page" hasexcerpt="true" views="0" is-published="True">
+      <title type="text"><![CDATA[Tecnología, Big data, la democracia intervenida y qué podemos hacer al respecto]]></title>
+      <content type="text">
+        <![CDATA[<p>En verano de 2014, escrib&iacute; un art&iacute;culo titulado <strong><a href="/post/Un-tweet-un-voto.aspx" target="_blank">"Un Tweet, un voto"</a></strong> que hablaba sobre c&oacute;mo la informaci&oacute;n y <strong>el rastro que dejamos a trav&eacute;s de toda la Web</strong>, y en especial en las redes sociales, pod&iacute;a ser analizada y <strong>explotada de manera masiva</strong> para lograr muchas cosas diferentes: desde predecir brotes de enfermedades hasta influir en las ventas de una multinacional. El art&iacute;culo era una llamada a <strong>sopesar nuestra responsabilidad a la hora de usar la Red</strong> (de ah&iacute; su t&iacute;tulo). Pero, como me suele pasar, no calibr&eacute; (ni de lejos) las implicaciones m&aacute;s extremas que todo esto tendr&iacute;a en el futuro.</p>
+<p>Y henos aqu&iacute;, en 2017. Un mundo en el que <strong>la situaci&oacute;n que describ&iacute;a</strong> hace solo tres a&ntilde;os <strong>se ha llevado al extremo</strong> en varias ocasiones y <strong>ha logrado influir manera determinante</strong> para ayudar a que un tipo peligroso gobierne en la primera potencia mundial o que el Reino Unido se haya ido de Europa, entre muchas otras cuestiones pol&iacute;ticas de mayor o menor calado en todo el mundo.</p>
+<h2 id="nadie-te-conoce-mejor-que-yo">Nadie te conoce mejor que yo</h2>
+<p><img style="float: right; margin-left: 10px;" src="/image.axd?picture=/2017/Botones-Facebook.png" alt="Botones de &quot;me gusta&quot; de Facebook" width="349" height="130" />En la actualidad casi todo el mundo utiliza de un modo u otro Internet y los servicios gratuitos que ofrecen un pu&ntilde;ado de gigantes que dominan el medio. En el &uacute;ltimo lustro la proliferaci&oacute;n de los dispositivos m&oacute;viles ha hecho que hasta los abuelitos de 90 a&ntilde;os se hayan subido al carro de la mal llamada "sociedad de la informaci&oacute;n" (yo ya dir&iacute;a de la desinformaci&oacute;n). Incluso cuando no saben usar nada m&aacute;s, al menos utilizan Whatsapp, propiedad de Facebook, uno de esos gigantes a los que me refer&iacute;a.</p>
+<p>Cuando utilizamos una red social o Whatsapp, cuando realizamos una b&uacute;squeda o cuando navegamos por p&aacute;ginas que recogen <em>cookies</em> para identificarnos (pr&aacute;cticamente todas), vamos dejando <strong>un rastro digital que nos caracteriza y nos define</strong> en m&uacute;ltiples dimensiones. Empresas como Facebook incluso recogen "perfiles sombra" (<em>Shadow Profiles</em>) de gente que no es usuaria de su plataforma, pero que utilizan igualmente (quiz&aacute; les falte tu nombre, pero tienen todo lo dem&aacute;s).</p>
+<p>Con los servicios de localizaci&oacute;n presentes en los dispositivos m&oacute;viles, <a href="http://www.zdnet.com/article/google-admits-tracking-users-location-even-when-setting-disabled/" target="_blank">incluso aunque los desactivemos</a>, <strong>dejamos tambi&eacute;n una impronta digital de nuestro paso por el mundo f&iacute;sico</strong>, incluso aunque no estemos utilizando aplicaci&oacute;n alguna.</p>
+<blockquote>
+<p>Las empresas dominantes del sector saben qu&eacute; gustos e intereses tenemos, conocen nuestros miedos y creencias, nuestra raza, qu&eacute; aspecto tenemos, nuestro nivel cultural y de estudios, qui&eacute;nes son nuestros amigos, nuestros familiares o nuestros socios, nuestra orientaci&oacute;n sexual, por d&oacute;nde nos movemos y con qu&eacute; frecuencia, con qui&eacute;nes hablamos y de qu&eacute;... Saben m&aacute;s de nosotros probablemente que nuestros c&oacute;nyuges o nuestros mejores amigos.</p>
+</blockquote>
+<p>Hasta no hace demasiado tiempo la principal aplicaci&oacute;n de todo esto era venderte m&aacute;s y mejores anuncios. Si una empresa sabe todo esto de ti puede ofrecerte un producto incluso antes de que t&uacute; mismo sepas que lo quieres. El valor de algo as&iacute; es incalculable.</p>
+<h2 id="democracia-tele-dirigida">Democracia tele-dirigida</h2>
+<p>Pero si te paras a pensarlo, todo este control es el sue&ntilde;o h&uacute;medo de cualquier Estado totalitario. Corrijo: <strong>de cualquier Estado</strong>. De cualquier gobierno o pol&iacute;tico.</p>
+<p>Incluso en nuestras democracias occidentales, aunque esos datos no se utilicen (al menos supuestamente) para vigilarnos y mantenernos bajo control, s&iacute; que <strong>se pueden emplear de manera mucho m&aacute;s sibilina para</strong> influir sobre cada uno de nosotros y, a la postre, <strong>influir sobre la sociedad en su conjunto</strong> y aprobar leyes, desestabilizar gobiernos o cambiar el resultado de elecciones.</p>
+<p>El an&aacute;lisis de esa informaci&oacute;n, combinado con inteligencia artificial y operaciones militares de psicolog&iacute;a y propaganda, se utiliza de manera cotidiana en el mundo pol&iacute;tico, en la mayor parte del mundo. De hecho es sabido qui&eacute;nes son las principales empresas del sector, lideradas por <a href="https://ca-political.com/" target="_blank">Cambridge Analytica</a>, aunque sean opacas y desde luego desconocidas por el gran p&uacute;blico.</p>
+<p>Releyendo lo anterior hasta yo mismo me doy cuenta de que sueno un poco "apocal&iacute;ptico" de m&aacute;s. Parezco un magufo en contra de las vacunas hablando de la conspiraci&oacute;n de las farmac&eacute;uticas, o del Club Bilderberg. Pero, si crees que exagero, te recomiendo encarecidamente que leas, por ejemplo, <a href="https://www.theguardian.com/technology/2017/may/07/the-great-british-brexit-robbery-hijacked-democracy" target="_blank">este art&iacute;culo de The Guardian</a> (en ingl&eacute;s) sobre c&oacute;mo el triunfo del Brexit se orquest&oacute; a trav&eacute;s del uso de <em>bots</em> en redes sociales, del an&aacute;lisis de estos datos y del gasto de cantidades ingentes de dinero en publicar mensajes tan segmentados que se generaban de manera concreta para cada una de las personas a las que se dirig&iacute;an (<em>micro-targeting</em>), apelando a los miedos de cada uno e inventando informaci&oacute;n para refrendar sus creencias. Un triunfo brutal de este tipo de servicios.</p>
+<p>En un entorno tan opaco es casi imposible saber en qu&eacute; escenarios se han utilizado este tipo de t&eacute;cnicas de control para influir pol&iacute;ticamente. Desde luego en los EEUU (de hecho donde empezaron a hacerlo), pero tambi&eacute;n se tiene constancia de Trinidad y Tobago. O sea, no solo en pa&iacute;ses del "primer mundo" como cabr&iacute;a esperar. De hecho se dice que en la actualidad la influencia de este tipo de t&eacute;cnicas est&aacute; presente en todo tipo de referendos y asuntos pol&iacute;ticos. Incluso en el caso de Espa&ntilde;a, con el asunto de Catalu&ntilde;a, toda la injerencia que ha habido, m&aacute;s que instigada por el gobierno ruso como se ha dicho tiene todas las trazas de haber sido coordinado por Cambridge Analytica, una de sus filiales, o una empresa que se dedica a lo mismo. Faltar&iacute;a saber qui&eacute;n les ha pagado y c&oacute;mo.</p>
+<h2 id="qu-podemos-hacer">Qu&eacute; podemos hacer</h2>
+<p>Aqu&iacute; es donde entra la responsabilidad individual. El ser conscientes de lo que hacemos, en d&oacute;nde lo hacemos, con qui&eacute;n y, sobre todo, a qui&eacute;n le estamos entregando nuestros datos con cada una de las m&uacute;ltiples interacciones que tenemos con la Red.</p>
+<p>Cuando hacemos una b&uacute;squeda, al darle un "Me gusta" a un amigo, al enviar un mensaje de Whatsapp, al llevar el m&oacute;vil encendido en el bolsillo, al conectarnos a una red Wifi gratuita en el extranjero... Debemos saber que seg&uacute;n c&oacute;mo lo hagamos podemos estar facilitando un poco m&aacute;s que puedan influir sobre nuestras decisiones, polarizarnos pol&iacute;ticamente, <a href="/post/La-era-de-los-hechos-alternativos.aspx" target="_blank">reafirmar de manera espuria nuestras ideas</a> (lo cual, s&iacute;, es malo), etc...</p>
+<p>Pero &iquest;qu&eacute; podemos hacer? Muchas cosas. A continuaci&oacute;n comento algunas f&aacute;ciles y directas, que puedes empezar a aplicar ahora mismo.</p>
+<h3 id="1-entender-lo-que-hacemos-y-separar-la-navegaci-n">1. Entender lo que hacemos y separar la navegaci&oacute;n</h3>
+<p>En primer lugar debemos tratar de <strong>entender qu&eacute; estamos haciendo exactamente</strong> cuando utilizamos cada servicio y <strong>tomar medidas de control</strong>.</p>
+<p>Por ejemplo, si navegamos por Internet con la sesi&oacute;n de Facebook o de Google abierta (por comodidad) o con alguna de sus <em>cookies</em> guardadas, cada vez que visitamos una p&aacute;gina que tenga Google Analytics (la pr&aacute;ctica totalidad de ellas) o un bot&oacute;n de dar "Me gusta" de Facebook, saben exactamente qu&eacute; estamos haciendo en Internet. Para evitarlo podemos hacer varias cosas:</p>
+<ul>
+<li>Usar dos navegadores diferentes: uno para usar los servicios comunes como el correo o las redes sociales y otro para navegar.</li>
+<li>Tambi&eacute;n podemos sacar partido a alg&uacute;n complemento como <a href="https://addons.mozilla.org/es/firefox/addon/multi-account-containers/?src=userprofile" target="_blank">Multi-Account Containers de Firefox</a> para separar completamente nuestra navegaci&oacute;n.</li>
+<li>O mejor a&uacute;n: utilizar un navegador que prime la privacidad como <a href="http://www.opera.com/" target="_blank">Opera</a> (que trae un bloqueador y una VPN integrados) o <a href="https://www.brave.com/" target="_blank">Brave</a> (que <a href="https://play.google.com/store/apps/details?id=com.brave.browser" target="_blank">en Android</a> es especialmente bueno y es el navegador que yo utilizo en este sistema).</li>
+</ul>
+<p>Tambi&eacute;n puedes usar el modo privado de tu navegador, que si bien <a href="https://spreadprivacy.com/is-private-browsing-really-private/" target="_blank">no es tan privado como te piensas</a>, al menos te aseguras que borra toda la informaci&oacute;n generada (<em>cookies</em>, historial de navegaci&oacute;n y dem&aacute;s) al terminar la navegaci&oacute;n.</p>
+<h3 id="2-hay-vida-m-s-all-de-google-y-facebook">2. Hay vida m&aacute;s all&aacute; de Google y Facebook</h3>
+<p>Otra gran medida a tomar es la de <strong>utilizar servicios alternativos a los habituales</strong> para muchas de las tareas comunes.</p>
+<p>Por ejemplo, yo hace mucho tiempo que uso como buscador principal <strong><a href="https://duckduckgo.com/" target="_blank">DuckDuckGo</a></strong>. Es casi tan bueno como Google, tiene <a href="https://duckduckgo.com/bang" target="_blank">utilidades muy chulas</a> y, sobre todo, <strong>est&aacute;n obsesionados con tu privacidad</strong> por lo que no se registra ni almacena nada de lo que buscas. Incluso te permite buscar en Google dejando el m&iacute;nimo rastro posible, para lo cual solo tienes que poner delante de tu b&uacute;squeda esto: <code>!g</code> y listo. Yo esto &uacute;ltimo lo uso en las pocas ocasiones que los resultados no me satisfacen y quiero ver qu&eacute; me dice el gigante de los buscadores. Ponlo como buscador por defecto en tu navegador.</p>
+<p>Whatsapp lo usa tanta gente que es casi "intr&iacute;nseco", por lo que es pr&aacute;cticamente imposible sustituirlo para todas tus comunicaciones. Pero con los amigos y familiares m&aacute;s cercanos, en los que puedas influir, utiliza <a href="https://signal.org/" target="_blank">Signal</a>, que es seguro, abierto y tambi&eacute;n est&aacute;n obsesionados con tu privacidad. Seguro que no te cuesta convencerlos, pues es un programa gratuito, ligero y que casi no ocupa. No tendr&aacute;n problema en tenerlo instalado y usarlo contigo. Por algo se empieza. Otra buena opci&oacute;n es <a href="https://telegram.org/" target="_blank">Telegram</a>, aunque solo sea por los chats privados y que tienen un gran inter&eacute;s en ser la alternativa a Whatsapp y por ello cuidan mucho la privacidad. Este est&aacute; mucho m&aacute;s extendido y desde mi punto de vista le da mil vueltas a Whatsapp. Lo podr&aacute;s usar con m&aacute;s gente, pues es bastante conocido.</p>
+<p>Tambi&eacute;n es interesante buscar servicios alternativos ubicados en Europa, donde las reglas relativas a la privacidad y la protecci&oacute;n de datos personales son muy estrictas. Los hay de todo tipo: correo (incluso gratuito), almacenamiento en la nube, mapas...</p>
+<p>En el caso de los m&oacute;viles los iPhone de Apple son mucho m&aacute;s respetuosos con tu privacidad que los basados en Android. Entre muchos motivos porque, de momento, el negocio de Apple est&aacute; en vender el hardware a precio de oro, no en vender tus datos. Adem&aacute;s t&eacute;cnicamente toman muchas medidas interesantes para asegurar esa privacidad. Me encanta por ejemplo el uso de la <a href="https://www.wired.com/2016/06/apples-differential-privacy-collecting-data/" target="_blank">privacidad diferencial</a> que hacen para recolectar datos de uso fiables, pero que al mismo tiempo no vulneren tu privacidad. Ahora bien, no todo el mundo puedo comprar un iPhone. O no le gusta (es mi caso: tras a&ntilde;os de usar iPhone y luego Windows Mobile, ahora uso Android). Pero desde el punto de vista de privacidad, es una mejor opci&oacute;n.</p>
+<p>La idea es: <strong>al menos reparte la informaci&oacute;n que generas</strong>. Disgregar la informaci&oacute;n en este caso es debilitar al enemigo.</p>
+<h3 id="3-usa-una-vpn">3. Usa una VPN</h3>
+<p>Existen multitud de buenas razones para conectarse a Internet con una VPN. Pero una de ellas es tambi&eacute;n la privacidad que proporcionan. Para ello el proveedor de VPN que elijas debe cumplir unos m&iacute;nimos.</p>
+<p>Para empezar <strong>no te f&iacute;es jam&aacute;s de VPNs gratuitas</strong> (las hay a patadas en las tiendas m&oacute;viles). De hecho consigues todo lo contrario: que esp&iacute;en lo que haces, que inyecten anuncios en las p&aacute;ginas que visites, que vendan tu informaci&oacute;n de navegaci&oacute;n. Se suelen aprovechar de los espabilados que las quieren usar para acceder a contenidos multimedia en otros pa&iacute;ses, por ejemplo. <strong>Si quieres usar una VPN y que sirva para algo deber&aacute;s pagarla</strong>.</p>
+<p>Si no tienes demasiados requerimientos y solo la vas a usar para la Web, entonces quiz&aacute; te llegue con la de Opera, que es gratuita, desde el propio navegador.</p>
+<p>Si quieres proteger todo el tr&aacute;fico y que tu privacidad qued&eacute; asegurada, hay muchas opciones en el mercado. Por si te sirve de referencia, la que yo uso es <a href="https://www.safervpn.com/" target="_blank">SaferVPN</a>, de una empresa israel&iacute;. Funciona bien, la puedes usar para todas las comunicaciones, en varios dispositivos, y te protege autom&aacute;ticamente en el m&oacute;vil cuando te conectas a una Wifi. Adem&aacute;s no guardan <em>logs</em> de tu actividad (otros tambi&eacute;n lo dicen pero no es cierto) y tiene un precio muy bueno: si la compras a largo plazo (3 a&ntilde;os) te cuesta unos 2-3 euros al mes.</p>
+<p>Recuerda los puntos anteriores tambi&eacute;n: solo usar la VPN no evita que te sigan con <em>cookies</em> o si est&aacute;s autenticado.</p>
+<h2 id="en-conclusi-n">En conclusi&oacute;n</h2>
+<p>Hace unos pocos a&ntilde;os la privacidad, para la mayor&iacute;a, era una cuesti&oacute;n de no estar sujetos a coerci&oacute;n comercial, y mantener el m&iacute;nimo de la parcela de dignidad que la privacidad en si misma implica. En la actualidad <strong>es algo de importancia primordial</strong>. Significa <strong>la diferencia entre ser o no una marioneta en las manos de partidos pol&iacute;ticos y grupos de presi&oacute;n</strong> con muchos recursos. La diferencia entre una democracia sana y una pervertida.</p>
+<p>Pero... "Yo tengo pensamiento cr&iacute;tico y pienso por mi cuenta", "Yo ni siquiera uso las redes sociales". Es indiferente. De un modo u otro todos usamos la Red. No podemos sustraernos a sus grandes beneficios. Por ello, todos estamos directamente influidos por ella, dejamos nuestra huella en ella y se nos puede caracterizar. Y por supuesto poseemos nuestros sesgos, nuestra falta de tiempo para analizarlo todo, y por lo tanto <strong>todos somos manipulables</strong>. Adem&aacute;s, llega con un grupo relativamente reducido que est&eacute; mediatizado y empuje a la opini&oacute;n general para que nos acabe envolviendo, por lo que todos somos responsables tambi&eacute;n de hacer entender la importancia de esto a los dem&aacute;s. A lo que debemos enfrentarnos es a <strong>propaganda de toda la vida elevada a la en&eacute;sima potencia</strong>.</p>
+<p>Quiz&aacute; me equivoque, pero pienso que este tipo de usos espurios del poder de la Red as&iacute; como todo el fen&oacute;meno de las llamadas <a href="/post/La-era-de-los-hechos-alternativos.aspx" target="_blank"><em>fake news</em></a> <strong>son una de las mayores amenazas para el progreso social y pol&iacute;tico</strong>, y la estabilidad mundial, que veremos en los pr&oacute;ximos meses o a&ntilde;os. Y no podemos esperar que nadie las meta en cintura por muchas razones, por lo que <strong>la &uacute;nica opci&oacute;n realista que nos queda es tomar medidas por nosotros mismos</strong>, empezando por entender el fen&oacute;meno, entender nuestra responsabilidad cuando usamos la Red y llevar a cabo las cosas sencillas que propongo en este texto.</p>
+<p>Yo pongo mi granito de arena tratando de divulgar un poco sobre el tema. Espero que te sirva, y que tomes cartas en el asunto. Y si te parece de inter&eacute;s, que lo compartas.</p>]]>
+      </content>
+      <post-name type="text"><![CDATA[Tecnología, Big data, la democracia intervenida y qué podemos hacer al respecto]]></post-name>
+      <excerpt type="text"><![CDATA[Hace unos pocos años la privacidad, para la mayoría, era una cuestión de no estar sujetos a coerción comercial, y mantener el mínimo de la parcela de dignidad que la privacidad en si misma implica. En la actualidad es algo de importancia primordial. Significa la diferencia entre ser o no una marioneta en las manos de partidos políticos y grupos de presión con muchos recursos. La diferencia entre una democracia sana y una pervertida. Y si crees que exagero, que eso no va contigo porque piensas por tu cuenta o porque no usas las redes socales... Sigue leyendo.]]></excerpt>
+      <authors>
+        <author ref="Admin" />
+      </authors>
+      <categories>
+        <category ref="4eba8b86-5f80-4df8-903a-462fcd0e9e8b" />
+        <category ref="e892c9ac-65e0-4f18-895e-41992b37ea57" />
+      </categories>
+      <tags>
+        <tag ref="Big Data" />
+        <tag ref="Política" />
+        <tag ref="Auto-engaño" />
+        <tag ref="Democracia" />
+        <tag ref="Facebook" />
+        <tag ref="Google" />
+        <tag ref="Privacidad" />
+        <tag ref="Redes Sociales" />
+        <tag ref="Sociedad de la Información" />
+      </tags>
+      <comments>
+        <comment id="26950e51-fb9d-4c89-b61e-dc6c19345d7b" parentid="00000000-0000-0000-0000-000000000000" date-created="2019-02-16T14:11:41" date-modified="2019-02-16T14:11:41" approved="true" user-name="Jose" user-email="josercjd@gmail.com" user-ip="90.94.39.43" user-url="">
+          <title type="text"><![CDATA[re: Tecnología, Big data, la democracia intervenida y qué podemos hacer al respecto]]></title>
+          <content type="text">
+            <![CDATA[Hola José Manuel.
+
+Hoy, vuelvo a leer, ya por tercera vez, este artículo. He vuelto tras leer otro, en otro blog, que tiene algo que ver en cuanto al control de la información se refiere, tal como yo lo veo. Es este:
+
+https://blog.desdelinux.net/articulos-11-y-13-de-la-ue-cambiaran-la-forma-de-compartir-la-informacion/
+
+Es inquietante.
+
+Respecto a tu artículo, también es preocupante que pese a su importancia no haya recibido ningún comentario hasta ahora desde el día que se publicó, hace ya más de un año. Entre este y el otro... se me pasan muchas cosas por la cabeza. 
+
+La primera que parece que a nadie le importe, cosa que sospecho ha podido influir en que no hayas publicado nada más aquí, en todo este tiempo... pues creo que quizás puedas tener la misma sensación. 
+
+Yo lo compartí en su momento por Facebook, pero como esperaba no hubo ninguna reacción: ni comentarios, ni likes... nada.
+
+Otra cosa que se me pasa por la cabeza es que... aparte de que cada uno tiene su vida, problemas, preocupaciones, trabajo, etc, (de lo cual yo no tengo casi nada y quizás por eso puedo dedicar más tiempo a leer todo esto y demás).... Pienso que... (al hilo de lo que ya mencionamos en su momento sobre las limitaciones en las capacidades cognitivas de las personas en tu otro artículo sobre IA), es justo este hecho lo que también condiciona que la gente no preste atención a estos asuntos y mucho menos se involucre.
+
+Actualmente estoy haciendo un Ciclo Superior de Desarrollo de Aplicaciones Multiplataforma y debo decir que lo llevo bastante mal. Además de mi escasa capacidad para resolver problemas (en contraposición a entender conceptos que ya me den hechos), me doy cuenta de que es todo muy complejo, la mayoría de los alumnos estamos &quot;hasta arriba&quot;, no damos abasto.
+
+Pienso en eso y en la complejidad inabarcable del mundo actual donde todo cambia tan rápido y donde sólo unos pocos pueden controlar la información arrastrándonos a los demás... Y la verdad, no tengo claro donde el origen de nuestros problemas está en la desidia generalizada que aparentemente hay, o esta desidia es una consecuencia de no poder lidiar con un mundo cuya complejidad nos supera ampliamente.
+
+Yo por ejemplo estoy muy frustrado con los estudios, mi mente es demasiado holística por decirlo de alguna manera, entiendo ideas complejas, relaciones, de manera &quot;intuitiva&quot;, pero soy un desastre para resolver problemas paso a paso, estructurar el pensamiento, lo que me lleva a no poder crear algoritmos y en última instancia no poder programar o no poder resolver ejercicios en Bases de Datos, etc. Tiendo a ver los problemas como un todo incluso sabiendo que eso me llevará a no solucionarlos, no controlo ni estructuro eficazmente el pensamiento.
+
+¿Por qué cuento esto?. Bueno pues... pienso que esto nos pasa a la mayoría ante la inmensa complejidad del mundo actual. Todos vemos la montaña y su intimidante tamaño, muchos queremos escalarla, pero nos rendimos antes de empezar sobrecogidos. Quizás muchos son conscientes de esto y por eso se está impulsando el desarrollo de la IA en todas sus formas.
+
+En mi opinión creo que habría que intentar frenar un poco y ocuparnos de poder avanzar por nuestra cuenta, hacerlo en la medida en que nuestras capacidades nos lo permitan, al tiempo que las desarrollamos al máximo en lugar de hacer lo que estamos haciendo...
+
+Es como si en realidad la humanidad ya se hubiese rendido pero siguiese avanzando a trompicones por pura inercia...: Suceden muchas cosas pero no hay una dirección clara. Me da la sensación de que hemos perdido el control. Se nos está yendo de las manos. No sé, todo esto es muy abstracto pero creo que se entiende a donde quiero llegar.
+
+Un saludo. Espero ver más publicaciones por aquí, a algunos sí nos interesan, incluso aunque nos generen impotencia jeje.]]>
+          </content>
+        </comment>
+        <comment id="6a063872-93be-46ba-a7b6-12250c617f1a" parentid="26950e51-fb9d-4c89-b61e-dc6c19345d7b" date-created="2019-02-18T09:45:40" date-modified="2019-02-18T09:45:40" approved="true" user-name="Jose M. Alarcon" user-email="jmalarcon@jmalarcon.es" user-ip="46.26.18.133" user-url="">
+          <title type="text"><![CDATA[re: Tecnología, Big data, la democracia intervenida y qué podemos hacer al respecto]]></title>
+          <content type="text">
+            <![CDATA[Hola Jose:
+
+Gracias por comentar. Lamento escuchar que tienes esas dificultades. Quizá deberías pensar en buscar algo más acorde con tu &quot;mente holística&quot; que te motive y se te de bien. De hecho en la actualidad lo que más hay son &quot;especialistas&quot;, pero poca gente que sepa ver más allá de su caja mental y pueda &quot;unir los puntos&quot;. Suerte con lo que te propongas.
+
+Volviendo al tema del artículo, a mi me parece un tema muy importante. De hecho, de lo más preocupante que tenemos encima de la mesa política y por lo tanto social. Porque, aunque siempre ha habido bulos equivalentes a este fenómeno, ahora están potenciados al máximo por culpa de la tecnología. Basta echar un vistazo al Whatsapp de una persona mayor para que se te pongan los pelos de punta, por no hablar de Facebook (que yo ya hace mucho que abandoné), Youtube... 
+
+De hecho el mayor problema de todo esto es que vuela por debajo del radar: como es personalizado, sutil y privado, lo detecta el que lo experimenta, pero no es tan evidente como un bulo en una cabecera nacional. Se está manipulando la democracia y los manipulados no son conscientes porque muchas veces son cosas sutiles y porque la tecnología va mucho más rápido que la sociedad aunque pensemos que no es así (https://jmalarcon.es/post/It-takes-a-generation.aspx).
+
+También estoy de acuerdo contigo en que todo es ya demasiado complejo. Este blog sin ir más lejos nació de mi interés por comprender mejor algunas cosas. Expresar un tema por escrito tras haber investigado y pensado en ello me ayuda a entender las cosas, recordarlas en el futuro y de paso, si le vale a alguien más, pues genial. Pero ya he renunciado a ello hace tiempo. Cada vez entiendo menos de todo, y ya no me motiva escribir.
+
+Por desgracia también vivo en la desgana, como casi todos. Socialmente pienso que lo único que se fomenta es el &quot;que cada palo aguante su vela&quot;, y me temo que he acabado por caer también en ello. Procuro estar menos informado (si hay algo gordo o importante de verdad ya me enteraré), he perdido por completo el interés por expresar mi opinión incluso en persona, y prefiero centrarme en otras cosas.
+
+Puede que se me pase en algún momento, pero en el futuro previsible dudo que vuelva a publicar nada nuevo aquí. No me aporta nada hacerlo. Lo único que publico ahora son artículos técnicos en mi otro blog y en el de la empresa.
+
+Me alegra saber de todos modos que alguna cosa de la que he escrito le sigue interesando a alguien.
+
+Un saludo.]]>
+          </content>
+        </comment>
+        <comment id="0e4b275c-04e7-4d9f-8567-63361bbe6878" parentid="6a063872-93be-46ba-a7b6-12250c617f1a" date-created="2019-02-18T13:00:13" date-modified="2019-02-18T13:00:13" approved="true" user-name="Jose" user-email="josercjd@gmail.com" user-ip="81.37.36.230" user-url="">
+          <title type="text"><![CDATA[re: Tecnología, Big data, la democracia intervenida y qué podemos hacer al respecto]]></title>
+          <content type="text">
+            <![CDATA[Gracias por tu comprensión. Estoy realmente frustrado porque siempre me ha gustado la informática y es algo a lo que me gustaría dedicarme, además de que el mundo del desarrollo es infinito como bien sabes y abre muchas puertas.
+
+Desconozco si mis problemas son meramente psicológicos o hay algo más. Si busco alguna alternativa, podría dedicarme quizás a la filosofía, escribir o dar charlas, no sé, pero no le veo demasiada salida a eso jejeje.
+
+Volviendo al tema que nos ocupa, parece que mis sospechas se confirman. Es una pena que al final casi todos acabemos así, con esa desgana para muchas cosas, incluso en mi clase existe una inhibición general impresionante a la hora de interactuar con el profesor (en la que me incluyo) etc.
+
+Sobre la manipulación en facebook... que te voy a contar que no sepas jeje. Es muy absurdo todo. Acabo de leer el artículo que me has puesto y puede que explique algunas de las cosas que comentamos, pero sólo en parte.
+
+Creo que otro problema es que no nos han educado para aprender y pensar por nosotros mismos. Además nos han enseñado a competir. Ahora de repente tenemos que ser capaces de pensar por nosotros mismos, ser resolutivos, aprender con rapidez, tener creatividad y colaborar en lugar de competir. Todo se ha dado la vuelta de golpe y nos ha pillado a muchos con el culo al aire.
+
+Al final acabamos todos estresados, deprimidos y colapsando los centros de salud mental, muchos tomando medicación, algunos para TDAH (como yo), otros para la depresión y la ansiedad... etc.
+
+El mundo está loco. Eso o lo estoy yo, que por probabilidad supongo que será lo segundo ;).
+
+Espero que recuperemos el ánimo y la motivación para hacer más cosas. Que vuelva la ilusión. Quiero pensar que esto es sólo un bache, por más que parezca un punto de no retorno.
+
+Un saludo.]]>
+          </content>
+        </comment>
+      </comments>
+      <trackbacks />
+    </post>
+  <post id="8802fee0-3f25-4162-8181-83fab6e73a07" date-created="2016-06-19T18:28:00" date-modified="2016-06-19T18:28:36" approved="false" post-url="/post/Habla-con-un-sueco-al-azar.aspx" type="normal" hasexcerpt="true" views="0" is-published="False">
+      <title type="text"><![CDATA[Habla con un sueco al azar]]></title>
+      <content type="text"><![CDATA[<p>El pasado mes de abril la Asociaci&oacute;n Sueca de Turismo puso en pr&aacute;ctica una idea de la agencia publicitaria <a href="http://ingostockholm.se/" target="_blank">Ingo Stocholm</a> (parte del gigante de la publicidad brit&aacute;nico <a href="http://www.wpp.com/wpp/" target="_blank">WPP</a>) para celebrar los <strong>250 a&ntilde;os de la abolici&oacute;n de la censura en Suecia</strong> en 1766, el primer pa&iacute;s del mundo en introducir una ley en su constituci&oacute;n para hacerlo.</p>
+<p>La idea es muy sencilla pero al mismo tiempo muy potente, y la verdad es que a mi me ha parecido genial, y por eso la estoy referenciando aqu&iacute;.</p>
+<p>Se trata de <strong><a href="http://theswedishnumber.com/" target="_blank">"The Swedish Number"</a></strong>, <strong>un n&uacute;mero de tel&eacute;fono</strong> al que puedes llamar desde cualquier parte del mundo, y cada vez que llamas <strong>te pone en comunicaci&oacute;n con un Sueco al azar</strong>, para que pod&aacute;is hablar de lo que quer&aacute;is. Sin restricciones ni entrenamiento previo.</p>
+<blockquote>
+<p>El n&uacute;mero es el +46 771 793 336 aunque tienen algunos n&uacute;meros locales en ciertos pa&iacute;ses para que te salga a precio de llamada local (o sea, incluso gratis. Por desgracia Espa&ntilde;a no es uno de ellos).</p>
+</blockquote>
+<p align="center"><img style="border: 0px currentcolor; display: inline; background-image: none;" title="The_Swedish_Number" src="/image.axd?picture=The_Swedish_Number.jpg" alt="The_Swedish_Number" width="750" height="505" border="0" /></p>
+<p>En realidad no te pasan con un sueco cualquiera al azar a elegir entre todos los suecos. Para participar y recibir llamadas es necesario descargarse una aplicaci&oacute;n (para <a href="https://itunes.apple.com/se/app/the-swedish-number/id1093136384?mt=8" target="_blank">iPhone</a> o <a href="https://play.google.com/store/apps/details?id=air.se.bazooka.callsweden&amp;hl=en" target="_blank">Android</a>), registrarse como "embajador"&nbsp; y activarla mediante un mensaje SMS que te env&iacute;an tras haberte registrado. Pero es muy sencillo y r&aacute;pido de hacer. De hecho <strong>no es necesario ser sueco para registrarse</strong>, solamente vivir all&iacute;, por lo que muchos extranjeros residentes se han hecho embajadores tambi&eacute;n y puedes hablar con ellos y su situaci&oacute;n en el pa&iacute;s. Obviamente tambi&eacute;n es necesario dominar m&iacute;nimamente el ingl&eacute;s, ya que es el idioma internacional de facto y la mayor&iacute;a de las llamadas son en esta lengua.</p>
+<blockquote>
+<p>Al parecer se han anotado muchas personas, pero no he logrado averiguar el n&uacute;mero exacto pues no lo han hecho p&uacute;blico, pero te dicen que es casi imposible que te toque dos veces con el mismo sueco cuando llamas...</p>
+</blockquote>
+<p>Una vez que te conectan con uno puedes hablar de lo que quieras, aunque parece ser que los temas estrella son, como no, los t&oacute;picos que todos tenemos sobre el pa&iacute;s: Ikea, Abba, las alb&oacute;ndigas, el fr&iacute;o que hace...</p>
+<p>Desde el 6 de abril hasta este momento se han recibido en ese n&uacute;mero 176.930 llamadas desde 186 pa&iacute;ses diferentes (o sea, pr&aacute;cticamente desde todo el globo), aunque una gran mayor&iacute;a (el 33%) desde los EEUU, lo cual no deja de sorprenderme dado el poco inter&eacute;s del yanqui promedio en lo que ocurre fuera de sus fronteras.</p>
+<p>M&aacute;s all&aacute; de la frikada y del efecto de marketing, la existencia de este n&uacute;mero me parece <strong>una idea sensacional para que un pa&iacute;s demuestre lo comprometido que est&aacute; con la libertad de expresi&oacute;n</strong>. Deber&iacute;a ser exigible casi como una obligaci&oacute;n m&aacute;s de los pa&iacute;ses si quieren estar en la ONU. Si cualquiera de verdad puede registrarse para recibir llamadas, y cualquier extranjero puede llamar y conectar al instante con un habitante normal y corriente de dicho pa&iacute;s para conocer sus opiniones y qu&eacute; est&aacute; pasando, la informaci&oacute;n fluye hacia el exterior con facilidad y se elimina el efecto de control del Estado.</p>
+<p>Por ejemplo, en estas &uacute;ltimas semanas en Espa&ntilde;a se ha utilizado la situaci&oacute;n de Venezuela como un arma arrojadiza pol&iacute;tica y un instrumento electoralista, al igual que se utiliz&oacute; a Grecia hace unos meses. Para empeorar las cosas, muchos medios de comunicaci&oacute;n han embarullado la situaci&oacute;n tratando de confundir a la opini&oacute;n p&uacute;blica, muchos diciendo lo desesperada que es la situaci&oacute;n en el pa&iacute;s americano, y otros diciendo todo lo contrario e insinuando que la oposici&oacute;n es la que causa esa situaci&oacute;n para derrocar al gobierno. Si Venezuela tuviese un n&uacute;mero como el sueco, los verdaderamente interesados tendr&iacute;an muy f&aacute;cil llamar 1, 2 o 20 veces y hablar con diferentes personas para extraer su propia conclusi&oacute;n (y por lo que parece podr&iacute;a ser factible pues hay <a href="http://www.conatel.gob.ve/venezuela-registra-mas-de-30-millones-de-suscriptores-de-telefonia-movil/" target="_blank">m&aacute;s de 30 millones de l&iacute;neas de telefon&iacute;a m&oacute;vil activas</a> en un pa&iacute;s con 31 millones de habitantes). No necesitar&iacute;as ni a la prensa para informarte, pudiendo conocer la situaci&oacute;n de primera mano.</p>
+<p>Por otro lado, y al no ser una conexi&oacute;n realmente al azar con cualquiera, es probable que los que se registrasen para un n&uacute;mero como ese fueran los m&aacute;s interesados en pol&iacute;tica y generalmente m&aacute;s polarizados en uno u otro sentido, no los ciudadanos "de a pi&eacute;". Y si se hiciera verdaderamente al azar muchos de esos ciudadanos normales no tendr&iacute;an el menor inter&eacute;s en hablar con un extranjero de sus cosas.</p>
+<p>En cualquier caso, si uno quiere parece relativamente f&aacute;cil poder hacer esas llamadas. Basta irse <a href="http://www.pac.com.ve/paginas-blancas/index.php" target="_blank">al directorio telef&oacute;nico de particulares</a>, escoger una regi&oacute;n y un n&uacute;mero al azar y llamar. &iquest;Cu&aacute;ntos periodistas lo habr&aacute;n hecho?...</p>]]></content>
+      <post-name type="text"><![CDATA[Habla con un sueco al azar]]></post-name>
+      <excerpt type="text"><![CDATA[El pasado mes de abril la Asociaci&oacute;n Sueca de Turismo puso en pr&aacute;ctica una idea de la ]]></excerpt>
+      <authors>
+        <author ref="Admin" />
+      </authors>
+      <categories>
+        <category ref="4eba8b86-5f80-4df8-903a-462fcd0e9e8b" />
+      </categories>
+      <tags>
+        <tag ref="Sociedad" />
+        <tag ref="Censura" />
+        <tag ref="Ideas" />
+        <tag ref="Prensa" />
+      </tags>
+    </post>
+  </posts>
+</blog>
