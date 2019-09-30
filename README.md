@@ -4,7 +4,7 @@
 
 C# command-line tool that converts a BlogML `.xml` file from BlogEngine to markdown files for [MIIS](https://github.com/jmalarcon/miis), Jekyll, Hugo, etc...
 
-It uses [pandoc](https://pandoc.org) for transforming HTML into Markdown. It's not 100% perfect but you will get pretty good markdown files with very few issues. **This tool does not export comments** (yet).
+**This tool does not export comments** (yet).
 
 >This was originally **based on this [repo by Pablo Cibraro](https://github.com/pcibraro/BlogMLToMarkdown)**, but couldn't make it work for pull requests, and it seems like abandoned. 
 
@@ -36,9 +36,7 @@ and then going to `Debug` and `Start options`:
 
 where you can put the path to your file.
 
-### 3. Run the app and wait for a while
-
-It taks around 10 seconds per post depending on it's length due to the use of pandoc, but since this is one in a lifetime, it shouldn't matter a lot.
+### 3. Run the app
 
 You'll see every post title and a progress while they are being processed and, at the end, you'll get an `output` folder with a maximum of three subfolders under it:
 
@@ -54,6 +52,6 @@ So, to crrectly have all your images in your new site, just copy the contents of
 
 The tool adds an `image` field into the resulting `.md` files front-matter pointing to the first image inside your content, so that it will be used as the main distinguished image of each post, because a lot of MIIS/Jekyll templates use this field with that purpose.
 
->**Note**: The provided `test.xml` file is in Spanish, from my old blog, sorry. It only has 3 sample posts, but I've tested it with almost one thousand posts in two different BlogEngine blogs and it went OK.
+>**Note**: The provided `test.xml` file is in Spanish, from my old blog without minor modifications for testing, sorry. It only has 3 sample posts, but I've tested it with almost one thousand posts in two different BlogEngine blogs and it went OK.
 
 Hope this helps!

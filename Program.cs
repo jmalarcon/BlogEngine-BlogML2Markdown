@@ -8,6 +8,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
+//using ReverseMarkdown; 
 
 namespace BlogMLToMarkdown
 {
@@ -171,48 +172,24 @@ image: {7}
             return path.Substring(0, dotPos);
         }
 
+        static readonly Regex _htmlCodeRegex = new Regex(@"<pre><code>(.*?)</code></pre>", RegexOptions.Singleline);
         static string ConvertHtmlToMarkdown(string source)
         {
-            string args = String.Format(@"-r html -t markdown");
+            //Change the code blocks without a language specified in a general lang to create fenced code later
+            source = _htmlCodeRegex.Replace(source, "<pre><code class=\"language-none\">$1</code></pre>");
+            var converter = new Html2Markdown.Converter();
+            string res = converter.Convert(source);
+            res = res.Trim(' ', '\r', '\n');  //Remove extra spaces and new lines
+            return res;
 
-            var startInfo = new ProcessStartInfo("pandoc.exe", args)
-            {
-                RedirectStandardOutput = true,
-                RedirectStandardInput = true,
-                UseShellExecute = false
-            };
-
-            var process = new Process { StartInfo = startInfo };
-            process.Start();
-
-            var inputBuffer = Encoding.UTF8.GetBytes(source);
-            process.StandardInput.BaseStream.Write(inputBuffer, 0, inputBuffer.Length);
-            process.StandardInput.Close();
-
-            process.WaitForExit(2000);
-            using (var sr = new StreamReader(process.StandardOutput.BaseStream))
-            {
-                return sr.ReadToEnd();
-            }
         }
 
-        static readonly Regex _codeRegex = new Regex(@"~~~~ \{\.csharpcode\}(?<code>.*?)~~~~", RegexOptions.Compiled | RegexOptions.Singleline);
+        //static readonly Regex _codeRegex = new Regex(@"~~~~ \{\.csharpcode\}(?<code>.*?)~~~~", RegexOptions.Compiled | RegexOptions.Singleline);
+        static readonly Regex _codeRegex = new Regex(@"<code class=""language-(.*?)""{0,1}>(.*?)</code>", RegexOptions.Singleline);
 
         static string FormatCode(string content)
         {
-            return _codeRegex.Replace(content, match =>
-            {
-                var code = match.Groups["code"].Value;
-                return "```" + GetLanguage(code) + code + "```";
-            });
-        }
-
-        static string GetLanguage(string code)
-        {
-            var trimmedCode = code.Trim();
-            if (trimmedCode.Contains("<%= ") || trimmedCode.Contains("<%: ")) return "aspx-cs";
-            if (trimmedCode.StartsWith("<script") || trimmedCode.StartsWith("<table")) return "html";
-            return "csharp";
+            return _codeRegex.Replace(content, "```$1\r\n$2```");
         }
     }
 }

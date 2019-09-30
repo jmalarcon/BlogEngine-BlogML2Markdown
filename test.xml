@@ -50,6 +50,94 @@
     </category>
   </categories>
   <posts>
+    <post id="f79cb39d-681d-4b47-bd3f-c6be9f80dfb3" date-created="2019-08-14T23:53:00" date-modified="2019-08-15T08:24:57" approved="true" post-url="/Blog/post/descartes-en-c-7-el-uso-que-no-conocias-para-el-guion-bajo.aspx" type="normal" hasexcerpt="true" views="0" is-published="True">
+      <title type="text"><![CDATA[Descartes en C# 7: el uso que no conocías para el guión bajo]]></title>
+      <content type="text">
+        <![CDATA[<p style="text-align: center;"><img src="/Blog/image.axd?picture=/2019/csharp-descartes.png" alt="" /></p>
+<p>En muchas ocasiones, cuando trabajas con la plataforma .NET debes forzosamente pasar par&aacute;metros o recibir resultados de llamadas que en realidad no necesitas para nada.</p>
+<p>Un caso t&iacute;pico es cuando, por ejemplo, obtienes una cadena de texto introducida por el usuario y quieres validar que se trata de un n&uacute;mero entero v&aacute;lido (o una fecha, etc...) y "parsearlo" como tal en una variable. Lo habitual que har&aacute;s es algo similar a esto:</p>
+<pre><code class="language-csharp">//Simulamos algo introducido por el usuario
+string valorUsuario = "Lo que sea";
+//Vamos a intentar convertirlo en entero
+int valorEntero = 0;
+bool esEntero = int.TryParse(valorUsuario, out valorEntero);
+Console.WriteLine(valorEntero);
+</code></pre>
+<p>En este caso ver&iacute;as en la consola el <code>0</code> ya que la cadena no es un entero v&aacute;lido y por lo tanto no se asigna valor alguno en el par&aacute;metro de salida <code>valorEntero</code>, quedando con su valor inicial.</p>
+<p>Perfecto. En este caso concreto lo &uacute;nico que nos interesa es el valor "parseado", pero el resultado de la funci&oacute;n nos da exactamente igual, ya que no necesitamos saber si se ha interpretado como entero con &eacute;xito o no. As&iacute; que podr&iacute;amos escribir simplemente esto:</p>
+<pre><code>//Simulamos algo introducido por el usuario
+string valorUsuario = "Lo que sea";
+//Vamos a intentar convertirlo en entero
+int valorEntero = 0;
+int.TryParse(valorUsuario, out valorEntero);
+Console.WriteLine(valorEntero);
+</code></pre>
+<p>Le hemos quitado la variable que recoge el resultado. Funciona igual y no presente problemas aparentes. Pero es algo un tanto feo ya que no sabremos si hemos obviado el resultado o simplemente nos hemos despistado, y adem&aacute;s si pasamos un <em>Linter</em> al c&oacute;digo (como el que trae integrado el propio Visual Studio) tendremos una advertencia por si acaso.</p>
+<p>Aqu&iacute; es donde entra en juego una caracter&iacute;stica que apareci&oacute; con C# 7 y que est&aacute; pensada para este y otros casos similares: <strong>los descartes</strong>.</p>
+<p>En C# 7 o posterior <strong>el s&iacute;mbolo <code>_</code> (el guion bajo) tiene el significado expl&iacute;cito de que nos interesa descartar alg&uacute;n resultado</strong> de una llamada que estemos haciendo.</p>
+<p>As&iacute;, lo anterior podr&iacute;amos escribirlo como:</p>
+<pre><code class="language-html">//Simulamos algo introducido por el usuario
+string valorUsuario = "Lo que sea";
+//Vamos a intentar convertirlo en entero
+int valorEntero = 0;
+_ = int.TryParse(valorUsuario, out valorEntero);
+Console.WriteLine(valorEntero);
+</code></pre>
+<p>Usando ese gui&oacute;n bajo como si fuera una variable (que no hemos declarado en ning&uacute;n lado) le indica al compilador que queremos hacer caso omiso del resultado devuelto por el m&eacute;todo al que estamos llamando. Es equivalente al fragmento anterior en el que no hac&iacute;amos las asignaci&oacute;n, pero <strong>tiene la ventaja de ser m&aacute;s expl&iacute;cito</strong>, ya que estamos dejando claro para cualquier que lea el c&oacute;digo (incluy&eacute;ndonos a nosotros mismos dentro de unos meses) que nuestra intenci&oacute;n era sin duda no usar ese valor devuelto, y no ha sido un despiste.</p>
+<p>De hecho podemos utilizarlo en otros lados, por ejemplo en el par&aacute;metro de salida. Si en el ejemplo anterior no nos interesa <em>parsear</em> la cadena sino simplemente saber si representa a un entero v&aacute;lido, en condiciones normales escribir&iacute;amos el c&oacute;digo del principio pero no usar&iacute;amos para nada la variable "out" llamada <code>valorEntero</code>. Podemos ser m&aacute;s expl&iacute;citos al hacerlo y de paso ahorrarnos una variable en memoria (por peque&ntilde;a que sea) escribiendo esto:</p>
+<pre><code class="language-csharp">string valorUsuario = "Lo que sea";
+//Vamos a intentar convertirlo en entero
+bool esEntero = int.TryParse(valorUsuario, out _);
+Console.WriteLine(esEntero);
+</code></pre>
+<p>F&iacute;jate en que ahora ni siquiera declaramos la variable con el resultado, pues no pensamos usarla, y le pasamos el gui&oacute;n bajo como segundo par&aacute;metro a <code>TryParse</code>. Esto le indica al compilador con total claridad que no nos interesa ese valor para nada, lo cual se traduce en que la variable ni siquiera se declara.</p>
+<blockquote>
+<p><strong>Nota</strong>: Por cierto, no debemos olvidar que el gui&oacute;n bajo es una letra v&aacute;lida para usar como nombre de una variable en C#, as&iacute; que nadie nos impide declarar una variable estilo: <code>int _ = 1;</code> y luego poder usarla en el c&oacute;digo. Mientras en el &aacute;mbito actual est&eacute; definida una variable con ese nombre no tendr&aacute; efecto como s&iacute;mbolo de descarte. De todos modos hay que tener mal car&aacute;cter para declarar una variable simplemente con ese nombre 😛</p>
+</blockquote>
+<p>Tambi&eacute;n podemos usar el descarte en varios sitios a la vez. Es decir, podemos poner varios <code>_</code> en el mismo &aacute;mbito sin problema, ya que no es como si declar&aacute;semos varias veces la misma variable.</p>
+<p>Un ejemplo habitual es cuando devolvemos tuplas como resultados de una funci&oacute;n y hacemos su decostrucci&oacute;n para obtener los valores por separado. Por ejemplo, supongamos que tenemos una funci&oacute;n que va a la base de datos (o a un servicio REST o a donde sea) para obtener los datos de un alumno a partir de su identificador &uacute;nico. En lugar de ser personas decentes y devolver una clase o una estructura devolvemos una tupla (no soy muy fan, pero h de reconocer que, a veces, para cosas sencillas son muy &uacute;tiles). Algo como esto:</p>
+<pre><code class="language-csharp">public (string, string, int, double) GetDatosAlumno(int idAlumno)
+{
+  //Se supone que vamos a la base de datos y obtenemos
+  //estos valores para devolverlos
+  return ("Antonio", "Espa&ntilde;ol", idAlumno*3, 8.5);
+}
+</code></pre>
+<p>Vale, si ahora queremos llamar a esta funci&oacute;n y recibir estos resultados la llamada ser&iacute;a algo as&iacute;:</p>
+<pre><code class="language-csharp">(string, string, int, double) datos = GetDatosAlumno(7);
+Console.WriteLine(datos.Item1);
+Console.WriteLine(datos.Item3);
+</code></pre>
+<p>que es feo porque debemos usar las propiedades Item1, Item2... de la tupla. O bien mejor as&iacute;:</p>
+<pre><code class="language-csharp">var (nombre, apellidos, edad, nota) = GetDatosAlumno(7);
+Console.WriteLine(nombre);
+Console.WriteLine(edad);
+</code></pre>
+<p>M&aacute;s bonito y sobre todo claro sobre lo que pretendemos hacer, pero que nos hace declarar una variable por cada valor devuelto donde se desconstruye la tupla resultante de llamar a la funci&oacute;n.</p>
+<p>Pero en este caso solo queremos usar el nombre y la edad. Los otros dos resultados no nos importan y no queremos declarar las correspondientes variables para nada. Soluci&oacute;n: descartarlas con el gui&oacute;n bajo:</p>
+<pre><code class="language-csharp">var (nombre, _, edad, _) = GetDatosAlumno(7);
+Console.WriteLine(nombre);
+Console.WriteLine(edad);
+</code></pre>
+<p>De este modo descartamos directamente dos de los resultados en la decostrucci&oacute;n de la tupla y usamos las que nos interesan.</p>
+<blockquote>
+<p><strong>Nota</strong>: no te olvides de que, para que esto funcione, debes estar usando C# 7 o posterior, es decir, .NET 4.6.2 o posterior y/o Visual Studio 2017 o posterior, asi que ojo.</p>
+</blockquote>
+<p>Bueno, la verdad es que no es de las caracter&iacute;sticas m&aacute;s espectaculares de C#, eso es hay que reconocerlo. Pero merece la pena utilizarla para tratar de crear c&oacute;digo m&aacute;s mantenible. Y desde luego es interesante conocer su existencia.</p>
+<p>&iexcl;Espero que te resulte &uacute;til!</p>]]>
+      </content>
+      <post-name type="text"><![CDATA[Descartes en C# 7: el uso que no conocías para el guión bajo]]></post-name>
+      <excerpt type="text"><![CDATA[En muchas ocasiones, cuando trabajas con la plataforma .NET debes forzosamente pasar parámetros o recibir resultados de llamadas que en realidad no necesitas para nada. Muchas veces puedes hacer caso omiso de ellos y simplemente no declararlos, pero lleva a código menos mantenible y "feo". En otras ocasiones no puedes eludir declararlos aunque luego no vayas a utilizarlos en absoluto. Para gestionar esta casuística en C# se introdujo una nueva característica para crear precisamente eso: descartes. Para evitar tener que declarar cosas que no vamos a utilizar. Vamos a verlo...]]></excerpt>
+      <authors>
+        <author ref="Admin" />
+      </authors>
+      <categories>
+        <category ref="79c1e503-f941-4f77-a0ee-5847b7b6219f" />
+      </categories>
+      <tags>
+        <tag ref="C#" />
+      </tags>
+    </post>
   <post id="0963f6b2-980c-4e0c-bd59-60e15ac8ce3f" date-created="2017-08-04T22:42:00" date-modified="2017-09-02T16:29:59" approved="true" post-url="/post/tweetstorm-la-inteligencia-artificial-superara-a-la-de-los-humanos-que-implicara.aspx" type="normal" hasexcerpt="true" views="0" is-published="True">
       <title type="text"><![CDATA[Tweetstorm: ¿La inteligencia artificial superará a la de los humanos? ¿Qué implicará?]]></title>
       <content type="text"><![CDATA[<p>Un <strong>Tweetstorm</strong> es una serie de Tweets encadenados que un usuario lanza en Twitter para expresar algunas ideas complejas en m&aacute;s que los exiguos 140 caracteres que permite la aplicaci&oacute;n de <em>micro-blogging</em>. Obviamente el nombre viene de combinar las palabras "Tweet" y "Storm" (tormenta), o sea, que es una "Tormenta de Tweets". Aunque una de las principales virtudes de Twitter, en mi opini&oacute;n, es precisamente su brevedad, lo de los Tweetstorms se ha puesto de moda como una forma de transmitir algunas ideas de manera breve en forma de hilo, y los hay muy interesantes la verdad.</p>
@@ -98,74 +186,6 @@
         <tag ref="Tweetstorm" />
         <tag ref="Inteligencia Artificial" />
       </tags>
-      <comments>
-        <comment id="c9f45f82-f92d-41e8-b5ff-eeba1860ba3b" parentid="00000000-0000-0000-0000-000000000000" date-created="2017-09-02T00:51:18" date-modified="2017-09-02T00:51:18" approved="true" user-name="Jose" user-email="josercjd@gmail.com" user-ip="90.94.39.137" user-url="">
-          <title type="text"><![CDATA[re: Tweetstorm: ¿La inteligencia artificial superará a la de los humanos? ¿Qué implicará?]]></title>
-          <content type="text"><![CDATA[Hola. Desde que tuve la suerte de dar contigo por los cursos de JavaScript, vengo siguiendo tu blog y he de decir que está muy interesante. Me ha gustado mucho sobre todo este artículo, el anterior y el de &quot;Electrónica chapucera y el futuro de la inteligencia artificial&quot;. También he leído tu libro &quot;Tres Monos, Diez Minutos&quot;: Creo que tiene tanta sabiduría que es de esos que has de leer varias veces y que siempre aporta algo en distintos momentos de la vida.
-
-Lo cierto es que todo este asunto de la inteligencia me tiene obsesionado, en particular la humana y la posibilidad de medirla y cuantificarla. ¿Qué opinas sobre eso?. Hay muchísima controversia en torno al Cociente Intelectual. Mucha gente no lo apoya en el sentido de que un test no puede medir la inteligencia humana en su totalidad, en tanto en cuanto no está bien definida ni por tanto tampoco lo están conceptos como la mal llamada en España &quot;Superdotación Intelectual&quot; y las Altas Capacidades en general.
-
-Yo opino que algo de objetividad sí tienen en la medida en que evalúan un amplio repertorio de habilidades cognitivas bien estudiadas y posteriormente se utilizan métodos estadísticos fiables para colocarte con precisión en la escala en función de tus resultados. Creo que las personas que están en contra de eso es porque lo enfocan al revés: creen que el resultado determina tu capacidad, no ven que es tu habilidad la que determina tu resultado. Por supuesto puedes tener un mal día, pero si haces varios en distintos momentos de tu vida con resultados similares... seguramente esa circunstancia ya no sea una condición importante y el motivo sea otro. Tal vez quieras dedicar otro artículo a ese asunto jeje.
-
-Yo no estoy seguro tampoco de que se vaya a crear una &quot;AI general&quot;, pero tampoco lo puedo descartar. El cerebro es harto complejo, pero no infinitamente complejo. Creo que cuando se conozca al 100% se podría replicar. En cualquier caso, todo este asunto de la AI y la inteligencia humana me parece muy interesante porque son campos que sin duda se complementan el uno al otro y los avances en un sentido repercuten también en el otro.
-
-Gracias por tu tiempo invertido en leer un comentario tan largo ;).
-
-Un saludo José Manuel.]]></content>
-        </comment>
-        <comment id="9e958c1f-bb5d-4e79-99e5-22f1ac047b23" parentid="c9f45f82-f92d-41e8-b5ff-eeba1860ba3b" date-created="2017-09-02T16:29:59" date-modified="2017-09-02T16:29:59" approved="true" user-name="Jose M. Alarcon" user-email="jmalarcon@jmalarcon.es" user-ip="83.165.163.95" user-url="">
-          <title type="text"><![CDATA[re: Tweetstorm: ¿La inteligencia artificial superará a la de los humanos? ¿Qué implicará?]]></title>
-          <content type="text"><![CDATA[Hola Jose:
-
-Muchas gracias por los cumplidos. Me alegro de que te parezca interesante lo que escribo. Aunque ahora lo tengo un poco &quot;aparcado&quot; por falta de tiempo y ganas, este tipo de comentarios siempre animan a uno a continuar.
-
-El conocimiento de la inteligencia y el cerebro es algo muy complejo y que abarca muchas cosas. Lo de medir la inteligencia con un número es un arma de doble filo. Supongo que es válido para cuantificar cierto tipo de inteligencia muy concreto, para ciertos tipos de razonamiento. Pero, como digo precisamente en este post, hay muchos otros tipos de inteligencia, o al menos muchas maneras de aplicarla. Yo me considero inteligente para algunas cosas, pero soy un completo zoquete para otras. Incluso dentro de algunas de las cosas en las que se podría decir que soy inteligente, tengo que luchar para poder avanzar con cuestiones concretas. Creo que la inteligencia &quot;pura&quot; (si existe tal cosa, pero para entendernos) por si sola no sirve de mucho, ya que todo ser inteligente debe serlo dentro de un entorno concreto, de una sociedad... y esto hace que la inteligencia deba acompañarse de muchas otras cosas, y que haya otras &quot;inteligencias&quot;, como algunas que cito en animales, por ejemplo.
-
-Es indudable que existen personas con &quot;altas capacidades&quot; que, cuando se detectan en edad temprana, sería bueno otorgarles una atención y orientación especiales, para tratar de potenciarlas y de ayudar a esa persona a integrarse mejor en la sociedad, pues en muchos casos me da la sensación de que eso es también necesario. Pero medir eso simplemente con un número me parece limitarlo. Como digo, creo que hay niños (y adultos) muy inteligentes que darían mal resultado en un test de inteligencia convencional, pero que son extremadamente inteligentes en otras áreas que no miden esos tests: las artes, la economía, la relación con otras personas... O sea, que creo que son un buen intento de buscar una forma de medir la inteligencia, pero el rango de lo que miden es demasiado estrecho.
-
-Para terminar, y por no extenderme más, respecto a lo de la AI general: o replicamos un cerebro de tipo orgánico porque se &quot;cultiva&quot; de algún modo o no creo que la tecnología del silicio que conocemos pueda llegar a replicar nada igual. En ese sentido creo que los avances más importantes a largo plazo quizá vengan del mundo de la biotecnología (quizá combinada con el silicio) que de la electrónica y la informática. Ahora bien, incluso aunque se lograse replicar un cerebro, la inteligencia o el &quot;ser&quot; es algo que es mucho más complejo y que viene determinado por otras muchas cosas: los sentidos y tu entorno, tus experiencias y conocimientos... Hay estudios que indican que incluso el lenguaje que utilices moldea tu cerebro y tu forma de pensar (hay una reflexión muy buena sobre ello en la peli del año pasado &quot;La llegada&quot;, recomendable). Además, siguiendo la mejor tradición de la teoría del caos, cualquier ínfima variación en un sistema tan complejo como del que estamos hablando provocaría otro resultado completamente diferente, por lo que de poco valdría tener algo así pues no podrías controlarlo o predeterminarlo (como robots súper-inteligentes con un cerebro idéntico pre-programado, como se ve en las películas).
-
-Este tema da para hablar (y escribir) durante horas, porque tiene implicaciones a todos los niveles, incluso filosóficos. Pero es de lo más interesante, desde luego.
-
-Gracias también por leer todo este rollo :-)
-
-Saludos!]]></content>
-        </comment>
-        <comment id="6383bf13-e731-4499-aa30-0436cd28c24b" parentid="9e958c1f-bb5d-4e79-99e5-22f1ac047b23" date-created="2017-09-02T17:10:26" date-modified="2017-09-02T17:10:26" approved="true" user-name="Jose" user-email="josercjd@gmail.com" user-ip="90.94.39.137" user-url="">
-          <title type="text"><![CDATA[re: Tweetstorm: ¿La inteligencia artificial superará a la de los humanos? ¿Qué implicará?]]></title>
-          <content type="text"><![CDATA[Gracias a ti por leer y contestar. Es interesante lo que dices y es verdad que da para hablar o escribir durante horas, así que de rollo nada, a mi me encanta :). He visto La llegada, está curiosa. Me alegro de que mi comentario te anime a continuar porque en parte es lo que pretendía. Realmente me gusta lo que escribes así que creo que todos salimos ganando al final.
-
-Saludos!]]></content>
-        </comment>
-        <comment id="c189ddb7-eca7-4026-a299-6d25a9bde53a" parentid="00000000-0000-0000-0000-000000000000" date-created="2019-01-16T14:40:30" date-modified="2019-01-16T14:40:30" approved="true" user-name="Universo Cuántico" user-email="cuanticou@gmail.com" user-ip="83.57.122.245" user-url="">
-          <title type="text"><![CDATA[re: Tweetstorm: ¿La inteligencia artificial superará a la de los humanos? ¿Qué implicará?]]></title>
-          <content type="text"><![CDATA[Buenos días. 
-En primer lugar, no sé si tiene lógica escribir un comentario un año y varios meses después de esta publicación, pero en los últimos tres años casi no podía leer, y mucho menos escribir.
-Pido disculpas.
-Sin embargo, este tema me interesa tanto que no soy capaz de retener las ganas de dar mi humilde opinión al respecto.
-Estoy convencido de que en el futuro, dentro de quizá 1.000 años, de ese orden, los humanos nos habremos dado cuenta de que somos muy imperfectos. La biología, que hoy nos parece increíblemente compleja y perfecta, no lo es para nada. Es solo mi humilde opinión.
-Problemas tremendos de la vida biológica: necesidad de muchos componentes como oxígeno, agua, alimentos, temperatura muy limitada, dormir, y otros problemas emocionales, envejecimiento y muerte, etc.
-Todo ello se puede mejorar mediante tecnologías que hoy ya empiezan a estar a nuestro alcance. Los simples chips, la electrónica, la informática ya permiten realizar cierto tipo de &quot;razonamientos&quot; y acceder a una monstruosa &quot;memoria&quot; contra la que los seres biológicos no tenemos nada, y digo &quot;nada&quot; que hacer.
-Opino humildemente que la evolución del ser humano continúa imparable, y que el siguiente paso va a ser nuestra conversión en máquinas, quizá tipo &quot;robot&quot;, que más adelante aún se convertirá en algo mucho más intangible, quizá como una nube de &quot;gas&quot; inteligente, y quizá algún día en poco más que energía pura que pueda &quot;pensar&quot;. 
-A lo mejor tenían razón nuestros antepasados creyendo en el &quot;alma&quot;,... porque sería algo similar.
-Sus ventajas serían clarísimas, ya que esos seres podrían viajar por el universo, a velocidades cercanas a la de la luz, sin necesitar nada más que energía pura, colonizando el universo y alcanzando unos niveles de conocimiento y sabiduría que hoy escaparían de nuestro entendimiento.
-Y no creáis que soy un loco de estos que creen en los extraterrestres ni en los fenómenos extraños,... todo lo contrario, siempre he sido súper realista y he odiado a la gente que cree en esas cosas raras. Por eso precisamente estudié ingeniería.
-Por último, quiero enviarle un cariñoso saludo a mi ex-alumno José Alarcón. He tenido miles y miles de alumnos a lo largo de decenas de años, y solo unos pocos, quizá diez o doce de ellos han llamado mi atención y mi respeto, pues  eran infinitamente mejores y más inteligentes que yo. Y José Alarcón es sin duda uno de ellos. Me alegro mucho de haberte conocido y haber podido disfrutar de tu compañía. 
-Además, tengo una deuda eterna contigo que probablemente no pueda pagar,  y que corroe mi mente desde hace muchos años.
-Me siento muy orgulloso de tí !!!!
-Enhorabuena por tu imparable éxito !!!!
-
-]]></content>
-        </comment>
-        <comment id="9a54b937-a96c-4570-b43d-45da72c6fc24" parentid="c189ddb7-eca7-4026-a299-6d25a9bde53a" date-created="2019-01-16T16:44:46" date-modified="2019-01-16T16:44:46" approved="true" user-name="Jose M. Alarcon" user-email="jmalarcon@jmalarcon.es" user-ip="46.26.18.133" user-url="">
-          <title type="text"><![CDATA[re: Tweetstorm: ¿La inteligencia artificial superará a la de los humanos? ¿Qué implicará?]]></title>
-          <content type="text"><![CDATA[Hola!
-
-Muchas gracias por dar tu opinión, y sobre todo muchas gracias por los cumplidos. Me he sonrojado al leerlos y más viniendo de alguien tan sobresaliente como tú :-)
-
-¡Cuídate!]]></content>
-        </comment>
-      </comments>
       <trackbacks />
     </post>
   <post id="6dc208c4-f689-4040-89e2-b1fa7b4e347b" date-created="2017-11-27T00:21:00" date-modified="2018-06-22T14:10:49" approved="true" post-url="/post/tecnologia-big-data-la-democracia-intervenida-y-que-podemos-hacer-al-respecto.aspx" type="page" hasexcerpt="true" views="0" is-published="True">
@@ -239,86 +259,6 @@ Muchas gracias por dar tu opinión, y sobre todo muchas gracias por los cumplido
         <tag ref="Redes Sociales" />
         <tag ref="Sociedad de la Información" />
       </tags>
-      <comments>
-        <comment id="26950e51-fb9d-4c89-b61e-dc6c19345d7b" parentid="00000000-0000-0000-0000-000000000000" date-created="2019-02-16T14:11:41" date-modified="2019-02-16T14:11:41" approved="true" user-name="Jose" user-email="josercjd@gmail.com" user-ip="90.94.39.43" user-url="">
-          <title type="text"><![CDATA[re: Tecnología, Big data, la democracia intervenida y qué podemos hacer al respecto]]></title>
-          <content type="text">
-            <![CDATA[Hola José Manuel.
-
-Hoy, vuelvo a leer, ya por tercera vez, este artículo. He vuelto tras leer otro, en otro blog, que tiene algo que ver en cuanto al control de la información se refiere, tal como yo lo veo. Es este:
-
-https://blog.desdelinux.net/articulos-11-y-13-de-la-ue-cambiaran-la-forma-de-compartir-la-informacion/
-
-Es inquietante.
-
-Respecto a tu artículo, también es preocupante que pese a su importancia no haya recibido ningún comentario hasta ahora desde el día que se publicó, hace ya más de un año. Entre este y el otro... se me pasan muchas cosas por la cabeza. 
-
-La primera que parece que a nadie le importe, cosa que sospecho ha podido influir en que no hayas publicado nada más aquí, en todo este tiempo... pues creo que quizás puedas tener la misma sensación. 
-
-Yo lo compartí en su momento por Facebook, pero como esperaba no hubo ninguna reacción: ni comentarios, ni likes... nada.
-
-Otra cosa que se me pasa por la cabeza es que... aparte de que cada uno tiene su vida, problemas, preocupaciones, trabajo, etc, (de lo cual yo no tengo casi nada y quizás por eso puedo dedicar más tiempo a leer todo esto y demás).... Pienso que... (al hilo de lo que ya mencionamos en su momento sobre las limitaciones en las capacidades cognitivas de las personas en tu otro artículo sobre IA), es justo este hecho lo que también condiciona que la gente no preste atención a estos asuntos y mucho menos se involucre.
-
-Actualmente estoy haciendo un Ciclo Superior de Desarrollo de Aplicaciones Multiplataforma y debo decir que lo llevo bastante mal. Además de mi escasa capacidad para resolver problemas (en contraposición a entender conceptos que ya me den hechos), me doy cuenta de que es todo muy complejo, la mayoría de los alumnos estamos &quot;hasta arriba&quot;, no damos abasto.
-
-Pienso en eso y en la complejidad inabarcable del mundo actual donde todo cambia tan rápido y donde sólo unos pocos pueden controlar la información arrastrándonos a los demás... Y la verdad, no tengo claro donde el origen de nuestros problemas está en la desidia generalizada que aparentemente hay, o esta desidia es una consecuencia de no poder lidiar con un mundo cuya complejidad nos supera ampliamente.
-
-Yo por ejemplo estoy muy frustrado con los estudios, mi mente es demasiado holística por decirlo de alguna manera, entiendo ideas complejas, relaciones, de manera &quot;intuitiva&quot;, pero soy un desastre para resolver problemas paso a paso, estructurar el pensamiento, lo que me lleva a no poder crear algoritmos y en última instancia no poder programar o no poder resolver ejercicios en Bases de Datos, etc. Tiendo a ver los problemas como un todo incluso sabiendo que eso me llevará a no solucionarlos, no controlo ni estructuro eficazmente el pensamiento.
-
-¿Por qué cuento esto?. Bueno pues... pienso que esto nos pasa a la mayoría ante la inmensa complejidad del mundo actual. Todos vemos la montaña y su intimidante tamaño, muchos queremos escalarla, pero nos rendimos antes de empezar sobrecogidos. Quizás muchos son conscientes de esto y por eso se está impulsando el desarrollo de la IA en todas sus formas.
-
-En mi opinión creo que habría que intentar frenar un poco y ocuparnos de poder avanzar por nuestra cuenta, hacerlo en la medida en que nuestras capacidades nos lo permitan, al tiempo que las desarrollamos al máximo en lugar de hacer lo que estamos haciendo...
-
-Es como si en realidad la humanidad ya se hubiese rendido pero siguiese avanzando a trompicones por pura inercia...: Suceden muchas cosas pero no hay una dirección clara. Me da la sensación de que hemos perdido el control. Se nos está yendo de las manos. No sé, todo esto es muy abstracto pero creo que se entiende a donde quiero llegar.
-
-Un saludo. Espero ver más publicaciones por aquí, a algunos sí nos interesan, incluso aunque nos generen impotencia jeje.]]>
-          </content>
-        </comment>
-        <comment id="6a063872-93be-46ba-a7b6-12250c617f1a" parentid="26950e51-fb9d-4c89-b61e-dc6c19345d7b" date-created="2019-02-18T09:45:40" date-modified="2019-02-18T09:45:40" approved="true" user-name="Jose M. Alarcon" user-email="jmalarcon@jmalarcon.es" user-ip="46.26.18.133" user-url="">
-          <title type="text"><![CDATA[re: Tecnología, Big data, la democracia intervenida y qué podemos hacer al respecto]]></title>
-          <content type="text">
-            <![CDATA[Hola Jose:
-
-Gracias por comentar. Lamento escuchar que tienes esas dificultades. Quizá deberías pensar en buscar algo más acorde con tu &quot;mente holística&quot; que te motive y se te de bien. De hecho en la actualidad lo que más hay son &quot;especialistas&quot;, pero poca gente que sepa ver más allá de su caja mental y pueda &quot;unir los puntos&quot;. Suerte con lo que te propongas.
-
-Volviendo al tema del artículo, a mi me parece un tema muy importante. De hecho, de lo más preocupante que tenemos encima de la mesa política y por lo tanto social. Porque, aunque siempre ha habido bulos equivalentes a este fenómeno, ahora están potenciados al máximo por culpa de la tecnología. Basta echar un vistazo al Whatsapp de una persona mayor para que se te pongan los pelos de punta, por no hablar de Facebook (que yo ya hace mucho que abandoné), Youtube... 
-
-De hecho el mayor problema de todo esto es que vuela por debajo del radar: como es personalizado, sutil y privado, lo detecta el que lo experimenta, pero no es tan evidente como un bulo en una cabecera nacional. Se está manipulando la democracia y los manipulados no son conscientes porque muchas veces son cosas sutiles y porque la tecnología va mucho más rápido que la sociedad aunque pensemos que no es así (https://jmalarcon.es/post/It-takes-a-generation.aspx).
-
-También estoy de acuerdo contigo en que todo es ya demasiado complejo. Este blog sin ir más lejos nació de mi interés por comprender mejor algunas cosas. Expresar un tema por escrito tras haber investigado y pensado en ello me ayuda a entender las cosas, recordarlas en el futuro y de paso, si le vale a alguien más, pues genial. Pero ya he renunciado a ello hace tiempo. Cada vez entiendo menos de todo, y ya no me motiva escribir.
-
-Por desgracia también vivo en la desgana, como casi todos. Socialmente pienso que lo único que se fomenta es el &quot;que cada palo aguante su vela&quot;, y me temo que he acabado por caer también en ello. Procuro estar menos informado (si hay algo gordo o importante de verdad ya me enteraré), he perdido por completo el interés por expresar mi opinión incluso en persona, y prefiero centrarme en otras cosas.
-
-Puede que se me pase en algún momento, pero en el futuro previsible dudo que vuelva a publicar nada nuevo aquí. No me aporta nada hacerlo. Lo único que publico ahora son artículos técnicos en mi otro blog y en el de la empresa.
-
-Me alegra saber de todos modos que alguna cosa de la que he escrito le sigue interesando a alguien.
-
-Un saludo.]]>
-          </content>
-        </comment>
-        <comment id="0e4b275c-04e7-4d9f-8567-63361bbe6878" parentid="6a063872-93be-46ba-a7b6-12250c617f1a" date-created="2019-02-18T13:00:13" date-modified="2019-02-18T13:00:13" approved="true" user-name="Jose" user-email="josercjd@gmail.com" user-ip="81.37.36.230" user-url="">
-          <title type="text"><![CDATA[re: Tecnología, Big data, la democracia intervenida y qué podemos hacer al respecto]]></title>
-          <content type="text">
-            <![CDATA[Gracias por tu comprensión. Estoy realmente frustrado porque siempre me ha gustado la informática y es algo a lo que me gustaría dedicarme, además de que el mundo del desarrollo es infinito como bien sabes y abre muchas puertas.
-
-Desconozco si mis problemas son meramente psicológicos o hay algo más. Si busco alguna alternativa, podría dedicarme quizás a la filosofía, escribir o dar charlas, no sé, pero no le veo demasiada salida a eso jejeje.
-
-Volviendo al tema que nos ocupa, parece que mis sospechas se confirman. Es una pena que al final casi todos acabemos así, con esa desgana para muchas cosas, incluso en mi clase existe una inhibición general impresionante a la hora de interactuar con el profesor (en la que me incluyo) etc.
-
-Sobre la manipulación en facebook... que te voy a contar que no sepas jeje. Es muy absurdo todo. Acabo de leer el artículo que me has puesto y puede que explique algunas de las cosas que comentamos, pero sólo en parte.
-
-Creo que otro problema es que no nos han educado para aprender y pensar por nosotros mismos. Además nos han enseñado a competir. Ahora de repente tenemos que ser capaces de pensar por nosotros mismos, ser resolutivos, aprender con rapidez, tener creatividad y colaborar en lugar de competir. Todo se ha dado la vuelta de golpe y nos ha pillado a muchos con el culo al aire.
-
-Al final acabamos todos estresados, deprimidos y colapsando los centros de salud mental, muchos tomando medicación, algunos para TDAH (como yo), otros para la depresión y la ansiedad... etc.
-
-El mundo está loco. Eso o lo estoy yo, que por probabilidad supongo que será lo segundo ;).
-
-Espero que recuperemos el ánimo y la motivación para hacer más cosas. Que vuelva la ilusión. Quiero pensar que esto es sólo un bache, por más que parezca un punto de no retorno.
-
-Un saludo.]]>
-          </content>
-        </comment>
-      </comments>
       <trackbacks />
     </post>
   <post id="8802fee0-3f25-4162-8181-83fab6e73a07" date-created="2016-06-19T18:28:00" date-modified="2016-06-19T18:28:36" approved="false" post-url="/post/Habla-con-un-sueco-al-azar.aspx" type="normal" hasexcerpt="true" views="0" is-published="False">
