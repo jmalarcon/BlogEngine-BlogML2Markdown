@@ -58,7 +58,7 @@ image: {7}
 
             foreach (var post in posts)
             {
-                var dateCreated = post.Attribute("date-created").Value;
+                var dateCreated = DateTime.Parse(post.Attribute("date-created").Value).ToString("yyyy-MM-dd HH:mm:ss");
                 var title = WrapInDoubleQuotes(post.Descendants(XName.Get("title", blogMLNamespace)).First().Value);
 
                 numProcessed++;
