@@ -26,7 +26,7 @@ You need to specify the name or path of the .xml file as a parameter. If the fil
 BlogMLToMarkdown.exe C:\Temp\MyBlogExport.xml
 ```
 
-If you run the program from within Visual Studio, you should change the debug parameters for the project, by clicking with the secondary mouse button over the project root node:
+If you run the program **from within Visual Studio**, you should change the debug parameters for the project, by clicking with the secondary mouse button over the project root node:
 
 ![Project properties in context menu](imgs/vs-props-01.png)
 
@@ -35,6 +35,8 @@ and then going to `Debug` and `Start options`:
 ![Project properties in context menu](imgs/vs-props-02.png)
 
 where you can put the path to your file.
+
+>**IMPORTANT**: if you run the project within Visual Studio **don't upgrade the HtmlAgilityPack package**. [HTML2Markdown](https://github.com/baynezy/Html2Markdown/), the component used for HTML parsing [relies in an specific version of this package](https://github.com/baynezy/Html2Markdown/issues/81) (v1.5.0) and if you upgrade it could break while parsing not very well constructed HTML. Just stick to the 1.5.0 version and don't upgrade it.
 
 ### 3. Run the app
 

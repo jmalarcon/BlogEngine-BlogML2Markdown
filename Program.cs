@@ -139,11 +139,11 @@ image: {7}
                 {
                     Directory.CreateDirectory("output\\" + folder);
                 }
-                using (var sw = File.CreateText ("output\\" + folder + "\\" + filename + ".md"))
+                using (var sw = File.CreateText("output\\" + folder + "\\" + filename + ".md"))
                 {
                     sw.Write(blog);
                 };
-                
+
             }
             Console.WriteLine("All posts processed and generated!!");
             Console.ReadLine();
@@ -168,7 +168,7 @@ image: {7}
             //If there's no final point
             if (dotPos == -1)
                 return path;    //The path is a file without extension
-            //Temove everyting after the point position (included)
+            //Remove everyting after the point position (included)
             return path.Substring(0, dotPos);
         }
 
